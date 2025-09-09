@@ -1,3 +1,5 @@
+import { accordions } from "./components/accordions.js";
+
 document.addEventListener("DOMContentLoaded", () => {
     function color(hsl) {
         return `hsl(${hsl})`
@@ -157,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.style.boxSizing = "border-box"
     })
 
-    
+    accordions()
 
-    console.log("Este website está usando uma biblioteca CSS: Lustra (lostkoe.github.io/Lustra)")
+    console.log("This website is using an CSS library: Lustra (lostkoe.github.io/Lustra)")
 })
