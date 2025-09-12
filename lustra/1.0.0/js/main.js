@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             warning: color("60, 81%, 48%"),
             danger: color("0, 78%, 47%"),
             success: color("120, 84%, 45%"),
+            white: color("0, 0%, 100%"),
         },
         other: {
             // [Red]
@@ -110,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
             pink900: color("300, 100%, 90%"),
             // [/]
         }
-    };
+    }
 
     const elementsColor = document.querySelectorAll("*")
 
@@ -121,45 +122,38 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let j = 0; j < classes.length; j++) {
             const cls = classes[j]
 
-            let colorName = ""
-            let ok = true
+            if (cls.startsWith("ls-color-")) {
+                const colorName = cls.slice(9).replace("-", "")
+                const colorValue = colors.main[colorName] || colors.other[colorName]
 
-            for (let k = 0; k < 9; k++) {
-                if (cls[k] !== "ls-color-"[k]) {
-                    ok = false
+                if (colorValue) {
+                    el.style.color = colorValue
                 }
-            }
-
-            if (ok) {
-                for (let k = 9; k < cls.length; k++) {
-                    colorName += cls[k]
-                }
-            }
-
-            let colorValue = null
-
-            if (colors.main[colorName]) {
-                colorValue = colors.main[colorName]
-            } else if (colors.other[colorName]) {
-                colorValue = colors.other[colorName]
-            }
-
-            if (colorValue) {
-                el.style.color = colorValue
             }
         }
     }
 
-    const allEls = document.querySelectorAll("*")
+    const elementsBackground = document.querySelectorAll("*")
 
-    allEls.forEach((e) => {
-        e.style.fontFamily = "sans-serif"
-        e.style.margin = "0px"
-        e.style.padding = "0px"
-        e.style.boxSizing = "border-box"
-    })
+    for (let i = 0; i < elementsBackground.length; i++) {
+        const el = elementsBackground[i]
+        const classes = el.classList
+
+        for (let j = 0; j < classes.length; j++) {
+            const cls = classes[j]
+
+            if (cls.startsWith("ls-bg-")) {
+                const bgName = cls.slice(6).replace("-", "")
+                const bgValue = colors.main[bgName] || colors.other[bgName]
+
+                if (bgValue) {
+                    el.style.backgroundColor = bgValue
+                }
+            }
+        }
+    }
 
     accordions()
 
-    console.log("This website is using an CSS library: Lustra (lostkoe.github.io/Lustra)")
+    console.log("This website is using a CSS library: Lustra")
 })
