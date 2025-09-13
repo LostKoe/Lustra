@@ -1,0 +1,69 @@
+.ls-alert {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    padding: 20px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    min-width: calc(100vw - 30px);
+    max-width: calc(100vh - 20px);
+    width: 100%;
+}
+
+.ls-alert-primary {
+    background: var(--ls-alert-primary);
+    border: 2px solid var(--ls-primary);
+}
+
+.ls-alert-secondary {
+    background: var(--ls-alert-secondary);
+    border: 2px solid var(--ls-secondary);
+}
+
+.ls-alert-warning {
+    background: var(--ls-alert-warning);
+    border: 2px solid var(--ls-warning);
+}
+
+.ls-alert-danger {
+    background: var(--ls-alert-danger);
+    border: 2px solid var(--ls-danger);
+}
+
+.ls-alert-success {
+    background: var(--ls-alert-success);
+    border: 2px solid var(--ls-success);
+}
+
+.ls-alert-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    filter: brightness(50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.ls-alert-icon {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.ls-alert-icon * {
+    width: 20px;
+}
+
+.ls-alert-dismiss {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.ls-alert-with-dismiss {
+    padding-right: 35px;
+}
