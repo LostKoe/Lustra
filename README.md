@@ -6,7 +6,7 @@ Give light to your frontend website with **Lustra**
 
 ![Last Commit](https://img.shields.io/github/last-commit/LostKoe/Lustra)
 ![Repo Size](https://img.shields.io/github/repo-size/LostKoe/Lustra)
-![Version](https://img.shields.io/badge/version-0.5.0-darkviolet)
+![Version](https://img.shields.io/badge/version-0.6.0-darkviolet)
 
 > 🚧 IN DEVELOPMENT 🚧
 
