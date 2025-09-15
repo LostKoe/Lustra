@@ -1,0 +1,20 @@
+.ls-breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.ls-breadcrumb li {
+    list-style: none;
+}
+
+.ls-breadcrumb-item:after {
+    content: var(--ls-breadcrumb-divider);
+    padding-left: 15px;
+}
+
+.ls-breadcrumb-item:last-child:after {
+    content: ""
+}

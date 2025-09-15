@@ -1,6 +1,13 @@
+/*
+    Lustra V 1.0.0 (Still getting there)
+    Copyright 2025 by LostKoe (github.com/LostKoe)
+    Licensed under MIT
+*/
+
 @import url(./components/accordions.css);
 @import url(./components/alerts.css);
 @import url(./components/badges.css);
+@import url(./components/breadcrumb.css);
 
 * {
     margin: 0;
@@ -23,6 +30,8 @@
     --ls-alert-warning: hsla(60, 81%, 48%, 0.5);
     --ls-alert-danger: hsla(0, 78%, 47%, 0.5);
     --ls-alert-success: hsla(120, 84%, 45%, 0.5);
+    /* Breadcrumb divider */
+    --ls-breadcrumb-divider: ">"
 }
 
 body {
