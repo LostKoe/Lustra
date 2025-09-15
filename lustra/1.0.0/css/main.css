@@ -30,8 +30,9 @@
     --ls-alert-warning: hsla(60, 81%, 48%, 0.5);
     --ls-alert-danger: hsla(0, 78%, 47%, 0.5);
     --ls-alert-success: hsla(120, 84%, 45%, 0.5);
-    /* Breadcrumb divider */
-    --ls-breadcrumb-divider: ">"
+    /* Breadcrumb */
+    --ls-breadcrumb-divider: ">";
+    --ls-breadcrumb-divider-color: "transparent";
 }
 
 body {
