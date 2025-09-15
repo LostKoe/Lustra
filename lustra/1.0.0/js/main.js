@@ -1,5 +1,6 @@
-import { accordions } from "./components/accordions.js";
-import { alerts } from "./components/alerts.js";
+import { accordions } from "./components/accordions.js"
+import { alerts } from "./components/alerts.js"
+import { badges } from "./components/badges.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     function color(hsl) {
@@ -157,6 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     accordions()
     alerts()
+    badges()
 
     console.log("This website is using a CSS library: Lustra")
 })
