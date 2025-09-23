@@ -1,0 +1,211 @@
+.ls-d-none {
+    display: none;
+}
+
+.ls-d-flex {
+    display: flex;
+}
+
+.ls-d-block {
+    display: block
+}
+
+.ls-d-inline {
+    display: inline;
+}
+
+.ls-d-inline-block {
+    display: inline-block;
+}
+
+.ls-jc-center {
+    justify-content: center;
+}
+
+.ls-jc-start {
+    justify-content: flex-start;
+}
+
+.ls-jc-end {
+    justify-content: flex-end;
+}
+
+.ls-jc-stretch {
+    justify-content: stretch;
+}
+
+.ls-jc-baseline {
+    justify-content: baseline;
+}
+
+.ls-jc-around {
+    justify-content: space-around;
+}
+
+.ls-jc-between {
+    justify-content: space-between;
+}
+
+.ls-jc-evenly {
+    justify-content: space-evenly;
+}
+
+.ls-align-center {
+    align-items: center
+}
+
+.ls-align-baseline {
+    align-items: baseline;
+}
+
+.ls-align-start {
+    align-items: flex-start;
+}
+
+.ls-align-end {
+    align-items: flex-end
+}
+
+.ls-align-stretch {
+    align-items: stretch
+}
+
+.ls-fd-column {
+    flex-direction: column;
+}
+
+.ls-fd-row {
+    flex-direction: row;
+}
+
+.ls-fd-column-r {
+    flex-direction: column-reverse;
+}
+
+.ls-fd-row-r {
+    flex-direction: row-reverse;
+}
+
+.ls-fw-wrap {
+    flex-wrap: wrap;
+}
+
+.ls-fw-nowrap {
+    flex-wrap: nowrap
+}
+
+.ls-fw-wrap-r {
+    flex-wrap: wrap-reverse;
+}
+
+.ls-height-1 {
+    height: 2rem;
+}
+
+.ls-height-2 {
+    height: 4rem;
+}
+
+.ls-height-3 {
+    height: 8rem;
+}
+
+.ls-height-4 {
+    height: 16rem;
+}
+
+.ls-height-5 {
+    height: 32rem;
+}
+
+.ls-pos-relative {
+    position: relative;
+}
+
+.ls-pos-absolute {
+    position: absolute;
+}
+
+.ls-pos-fixed {
+    position: fixed;
+}
+
+.ls-pos-sticky {
+    position: sticky;
+}
+
+.ls-top-0 {
+    top: 0%;
+}
+
+.ls-top-25 {
+    top: 25%;
+}
+
+.ls-top-50 {
+    top: 50%;
+}
+
+.ls-top-75 {
+    top: 75%;
+}
+
+.ls-top-100 {
+    top: 100%;
+}
+
+.ls-bottom-0 {
+    bottom: 0%;
+}
+
+.ls-bottom-25 {
+    bottom: 25%;
+}
+
+.ls-bottom-50 {
+    bottom: 50%
+}
+
+.ls-bottom-75 {
+    bottom: 75%;
+}
+
+.ls-left-0 {
+    left: 0%;
+}
+
+.ls-left-25 {
+    left: 25%;
+}
+
+.ls-left-50 {
+    left: 50%;
+}
+
+.ls-left-75 {
+    left: 75%;
+}
+
+.ls-left-100 {
+    left: 100%;
+}
+
+.ls-right-0 {
+    right: 0%;
+}
+
+.ls-right-25 {
+    right: 25%;
+}
+
+.ls-right-50 {
+    right: 50%;
+}
+
+.ls-right-75 {
+    right: 75%;
+}
+
+.ls-right-100 {
+    right: 100%;
+}

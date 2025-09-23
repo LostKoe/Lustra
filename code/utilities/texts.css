@@ -1,0 +1,111 @@
+.ls-h1, h1 {
+    font-size: var(--ls-size-h1);
+}
+
+.ls-h2, h2 {
+    font-size: var(--ls-size-h2);
+}
+
+.ls-h3, h3 {
+    font-size: var(--ls-size-h3);
+}
+
+.ls-h4, h4 {
+    font-size: var(--ls-size-h4);
+}
+
+.ls-h5, h5 {
+    font-size: var(--ls-size-h5);
+}
+
+.ls-h6, h6 {
+    font-size: var(--ls-size-h6);
+}
+
+.ls-p, p {
+    font-size: var(--ls-size-p);
+}
+
+.ls-weight-100 {
+    font-weight: var(--ls-font-weight-100);
+}
+
+.ls-weight-200 {
+    font-weight: var(--ls-font-weight-200);
+}
+
+.ls-weight-300 {
+    font-weight: var(--ls-font-weight-300);
+}
+
+.ls-weight-400, .ls-weight-normal {
+    font-weight: var(--ls-font-weight-400);
+}
+
+.ls-weight-500 {
+    font-weight: var(--ls-font-weight-500);
+}
+
+.ls-weight-600 {
+    font-weight: var(--ls-font-weight-600);
+}
+
+.ls-weight-700, .ls-weight-bold {
+    font-weight: var(--ls-font-weight-700);
+}
+
+.ls-weight-800 {
+    font-weight: var(--ls-font-weight-800);
+}
+
+.ls-weight-900 {
+    font-weight: var(--ls-font-weight-900);
+}
+
+.ls-text-italic {
+    font-style: var(--ls-font-style-italic);
+}
+
+.ls-text-wrap {
+    text-wrap: wrap;
+}
+
+.ls-text-nowrap {
+    text-wrap: nowrap;
+}
+
+.ls-text-balance {
+    text-wrap: balance;
+}
+
+.ls-text-left {
+    text-align: left;
+}
+
+.ls-text-center {
+    text-align: center;
+}
+
+.ls-text-right {
+    text-align: right;
+}
+
+.ls-text-justify {
+    text-align: justify;
+}
+
+.ls-text-td-none {
+    text-decoration: none;
+}
+
+.ls-text-underline {
+    text-decoration: underline;
+}
+
+.ls-text-through {
+    text-decoration: line-through;
+}
+
+.ls-text-overline {
+    text-decoration: overline;
+}
