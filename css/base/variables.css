@@ -188,4 +188,7 @@
     --ls-grad-top-left: to top left;
     --ls-grad-left: to left;
     --ls-grad-left-bottom: to left bottom;
+
+    /* Components */
+    --ls-breadcrumb-content: ">"
 }

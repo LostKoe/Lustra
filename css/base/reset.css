@@ -58,3 +58,15 @@ input:focus {
     color: var(--ls-light);
     border: 1px solid var(--ls-light)
 }
+
+pre {
+    text-wrap: wrap;
+}
+
+table {
+    width: 100%;
+}
+
+li + li {
+    margin-bottom: 10px;
+}

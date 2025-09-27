@@ -223,3 +223,32 @@
 .ls-btn-group-column .ls-btn:last-child {
     border-radius: 0 0 5px 5px;
 }
+
+.ls-btn-sm {
+    transform: scale(0.75);
+}
+
+.ls-btn-md {
+    transform: scale(1);
+}
+
+.ls-btn-lg {
+    transform: scale(1.25);
+}
+
+.ls-btn-xl {
+    transform: scale(1.5);
+}
+
+.ls-btn-xxl {
+    transform: scale(2);
+}
+
+.ls-btn[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.ls-btn-block {
+    width: calc(100% - 10px);
+}

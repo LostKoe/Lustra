@@ -1,0 +1,10 @@
+{
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": true,
+    "editor.minimap.scale": 2,
+    "editor.fontSize": 18,
+    "editor.lineHeight": 1.35,
+    "[js]": {
+        "editor.tabSize": 4
+    }
+}

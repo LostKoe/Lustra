@@ -115,7 +115,39 @@
 }
 
 .ls-height-5 {
-    height: 32rem;
+    min-height: 32rem;
+}
+
+.ls-height-max {
+    min-height: 100%;
+}
+
+.ls-height-vh {
+    min-height: 100vh;
+}
+
+.ls-width-1 {
+    min-width: 2rem;
+}
+
+.ls-width-2 {
+   min-width: 4rem;
+}
+
+.ls-width-3 {
+    min-width: 8rem;
+}
+
+.ls-width-4 {
+    min-width: 16rem;
+}
+
+.ls-width-5 {
+    min-width: 32rem;
+}
+
+.ls-width-max {
+    min-height: 100%;
 }
 
 .ls-pos-relative {

@@ -1,0 +1,16 @@
+.ls-breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ls-breadcrumb-item::after {
+    content: var(--ls-breadcrumb-content);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ls-breadcrumb-item:last-child::after {
+    content: "";
+}

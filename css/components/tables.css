@@ -1,0 +1,24 @@
+.ls-table {
+    border: 2px solid var(--ls-light-dark);
+    margin: 15px 10px;
+    min-height: 10px;
+    border-collapse: collapse;
+}
+
+.ls-table tr {
+    border-bottom: 2px solid var(--ls-light-dark);
+}
+
+.ls-table-primary {
+    background: var(--ls-primary);
+    color: var(--ls-light);
+    border: 2px solid var(--ls-primary-dark);
+}
+
+.ls-table-primary tr {
+    border-bottom: 2px solid var(--ls-primary-dark);
+}
+
+.ls-table td, .ls-table th {
+    padding: 5px;
+}

@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+issue_templates:
+  - name: Report a bug
+    description: Use this model to report a bug in the Framework
+    labels: [bug]
+    file: ISSUE_TEMPLATE/bug_report.md
+  - name: Request a feature
+    description: Use this model to request a new feature
+    labels: [feature]
+    file: ISSUE_TEMPLATE/feature_request_template.md
