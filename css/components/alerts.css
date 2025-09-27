@@ -1,0 +1,122 @@
+/* Inline alerts */
+.ls-alert {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    margin: 5px;
+    padding: 10px;
+    width: calc(100% - 10px);
+    background: var(--ls-light-dark);
+    color: var(--ls-dark);
+    border-radius: 10px;
+}
+
+.ls-alert-head {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Themes system */
+[data-ls-theme="light"] .ls-alert {
+    background: var(--ls-light-dark);
+    color: var(--ls-dark);
+    border: 2px solid var(--ls-dark-light);
+}
+
+[data-ls-theme="dark"] .ls-alert {
+    background: var(--ls-dark-light);
+    color: var(--ls-light);
+    border: 2px solid var(--ls-dark-darker);
+}
+
+/* Alerts colors */
+.ls-alert-primary {
+    background: var(--ls-primary);
+    color: var(--ls-light);
+    border: 2px solid var(--ls-primary-dark);
+}
+
+.ls-alert-secondary {
+    background: var(--ls-secondary);
+    color: var(--ls-light);
+    border: 2px solid var(--ls-secondary-dark);
+}
+
+.ls-alert-warning {
+    background: var(--ls-warning);
+    color: var(--ls-dark);
+    border: 2px solid var(--ls-warning-dark);
+}
+
+.ls-alert-danger {
+    background: var(--ls-danger);
+    color: var(--ls-light);
+    border: 2px solid var(--ls-danger-dark);
+}
+
+.ls-alert-info {
+    background: var(--ls-info);
+    color: var(--ls-dark);
+    border: 2px solid var(--ls-info-dark);
+}
+
+.ls-alert-light {
+    background: var(--ls-light-dark);
+    color: var(--ls-dark);
+}
+
+.ls-alert-dark {
+    background: var(--ls-dark-light);
+    color: var(--ls-light);
+    border: 2px solid var(--ls-dark-darker);
+}
+
+/* Alert icons */
+
+.ls-alert-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+/* Alert links */
+.ls-alert-link {
+    font-weight: bold;
+}
+
+/* Text colors */
+.ls-alert-primary .ls-alert-link, .ls-alert-secondary .ls-alert-link, .ls-alert-danger .ls-alert-link {
+    color: var(--ls-light);
+}
+
+.ls-alert-warning .ls-alert-link, .ls-alert-info .ls-alert-link {
+    color: var(--ls-dark);
+}
+
+/* Alerts in notfication */
+
+/* Resposivity */
+@media screen and (max-width: 420px) {
+    .ls-alert-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ls-alert-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+}
+
