@@ -12,6 +12,11 @@ body {
     background: var(--ls-light);
     color: var(--ls-dark);
     font-family: var(--ls-font-sans-serif);
+    height: 100vh;
+}
+
+html, body {
+    position: relative;
 }
 
 body[data-ls-theme="light"] {

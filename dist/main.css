@@ -8,7 +8,7 @@
 /* @import url(./utilities/display.css); */
 /* @import url(./utilities/texts.css); */
 /* @import url(./utilities/lists.css); */
-/* @import url(./components/btns.css); */
+@import url(../css/components/btns.css);
 /* @import url(./components/breadcrumbs.css); */
 /* @import url(./components/tables.css); */
 @import url(../css/components/alerts.css);
