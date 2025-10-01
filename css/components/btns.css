@@ -10,6 +10,7 @@
     text-decoration: none;
     cursor: pointer;
     text-wrap: nowrap;
+    overflow: hidden;
     transition: all var(--ls-transition-fast);
 }
 
@@ -139,7 +140,7 @@
 
 .ls-btn-success-outline:hover {
     background: var(--ls-success);
-    color: var(--ls-success);
+    color: var(--ls-light);
     filter: brightness(100%);
 }
 
@@ -251,4 +252,96 @@
 
 .ls-btn-block {
     width: calc(100% - 10px);
+}
+
+.ls-btn-fill-primary,
+.ls-btn-fill-secondary,
+.ls-btn-fill-warning,
+.ls-btn-fill-danger,
+.ls-btn-fill-success,
+.ls-btn-fill-info,
+.ls-btn-fill-light,
+.ls-btn-fill-dark {
+    background: transparent;
+    filter: brightness(100%) !important;
+}
+
+.ls-btn-fill-primary {
+    background: transparent;
+    color: var(--ls-primary);
+}
+
+.ls-btn-fill-primary:hover {
+    background: var(--ls-primary);
+    color: var(--ls-light);
+}
+
+.ls-btn-fill-secondary {
+    background: transparent;
+    color: var(--ls-secondary)
+}
+
+.ls-btn-fill-secondary:hover {
+    background: var(--ls-secondary);
+    color: var(--ls-light);
+}
+
+.ls-btn-fill-warning {
+    background: transparent;
+    color: var(--ls-warning);
+}
+
+.ls-btn-fill-warning:hover {
+    background: var(--ls-warning);
+    color: var(--ls-dark);
+}
+
+.ls-btn-fill-danger {
+    background: transparent;
+    color: var(--ls-danger);
+}
+
+.ls-btn-fill-danger:hover {
+    background: var(--ls-danger);
+    color: var(--ls-light);
+}
+
+.ls-btn-fill-success {
+    background: transparent;
+    color: var(--ls-success)
+}
+
+.ls-btn-fill-success:hover {
+    background: var(--ls-success);
+    color: var(--ls-dark);
+}
+
+.ls-btn-fill-info {
+    background: transparent;
+    color: var(--ls-info);
+}
+
+.ls-btn-fill-info:hover {
+    background: var(--ls-info);
+    color: var(--ls-dark);
+}
+
+.ls-btn-fill-light {
+    background: transparent;
+    color: var(--ls-light);
+}
+
+.ls-btn-fill-light:hover {
+    background: var(--ls-light);
+    color: var(--ls-dark);
+}
+
+.ls-btn-fill-dark {
+    background: transparent;
+    color: var(--ls-dark);
+}
+
+.ls-btn-fill-dark:hover {
+    background: var(--ls-dark);
+    color: var(--ls-light)
 }
