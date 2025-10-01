@@ -1,0 +1,106 @@
+.ls-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards blocks */
+.ls-card-img {
+    margin: -20px;
+    width: calc(100% + 40px);
+    margin-bottom: 10px;
+}
+
+.ls-card * + .ls-card-img {
+    margin-top: 10px;
+}
+
+.ls-card-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 3px solid var(--ls-light-dark);
+    width: calc(100% + 40px);
+    padding: 0 20px;
+    margin: 10px -20px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.ls-card-list * {
+    margin: 0;
+}
+
+.ls-card-list-item {
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    padding: 5px 20px;
+}
+
+/* Changes the background for list items that are in a even sequence */
+.ls-card-list-item:nth-child(even) {
+    background: var(--ls-neutral-100);
+}
+
+.ls-card-footer {
+    margin: 10px -20px -10px -20px;
+    padding: 10px;
+    background: var(--ls-neutral-200);
+    width: calc(100% + 40px);
+}
+
+/* Groups */
+.ls-card-group {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    width: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.ls-card-group .ls-card {
+    margin: 0;
+    box-shadow: none;
+    border: 1px solid var(--ls-neutral-300);
+    border-radius: 0;
+    min-height: 20px;
+}
+
+.ls-card-group .ls-card:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.ls-card-group .ls-card:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Resposivity */
+@media screen and (max-width: 425px) {
+    .ls-card-group {
+        flex-direction: column;
+    }
+
+    .ls-card {
+        width: 100%;
+    }
+
+    .ls-card-group .ls-card:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .ls-card-group .ls-card:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+}

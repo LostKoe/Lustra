@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oi&family=Pixelify+Sans:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url(../css/base/variables.css);
 @import url(../css/base/reset.css);
-/* @import url(./utilities/gradients.css); */
-/* @import url(./utilities/spacings.css); */
-/* @import url(./utilities/backgrounds.css); */
-/* @import url(./utilities/colors.css); */
-/* @import url(./utilities/display.css); */
-/* @import url(./utilities/texts.css); */
-/* @import url(./utilities/lists.css); */
 @import url(../css/components/btns.css);
-/* @import url(./components/breadcrumbs.css); */
-/* @import url(./components/tables.css); */
 @import url(../css/components/alerts.css);
-
-.ls-active {
-    filter: brightness(50%);
-}
+@import url(../css/components/cards.css);
