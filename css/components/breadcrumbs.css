@@ -5,12 +5,28 @@
     flex-wrap: wrap;
 }
 
+.ls-breadcrumb-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+}
+
 .ls-breadcrumb-item::after {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
     content: var(--ls-breadcrumb-content);
-    margin-left: 10px;
-    margin-right: 10px;
+    color: var(--ls-breadcrumb-color);
+    margin-left: 15px;
+    margin-right: 15px;
+    background-image: var(--ls-breadcrumb-img);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .ls-breadcrumb-item:last-child::after {
     content: "";
+    background-image: none;
 }

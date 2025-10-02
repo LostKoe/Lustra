@@ -69,6 +69,7 @@
     color: var(--ls-dark);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
 }
 
 .ls-alert-left-top {
@@ -144,6 +145,12 @@
     background: var(--ls-danger);
     color: var(--ls-light);
     border: 2px solid var(--ls-danger-dark);
+}
+
+.ls-alert-success {
+    background: var(--ls-success);
+    color: var(--ls-dark);
+    border: 2px solid var(--ls-success-dark);
 }
 
 .ls-alert-info {

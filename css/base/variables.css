@@ -190,5 +190,7 @@
     --ls-grad-left-bottom: to left bottom;
 
     /* Components */
-    --ls-breadcrumb-content: ">"
+    --ls-breadcrumb-content: ">";
+    --ls-breadcrumb-color: var(--ls-dark);
+    --ls-breadcrumb-img: url("");
 }
