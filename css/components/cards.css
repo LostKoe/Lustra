@@ -4,6 +4,8 @@
     align-items: flex-start;
     flex-direction: column;
     overflow: hidden;
+    background: var(--ls-light);
+    color: var(--ls-dark);
     margin: 10px;
     padding: 10px 20px;
     border-radius: 10px;
@@ -28,6 +30,7 @@
     align-items: flex-start;
     flex-direction: column;
     border: 3px solid var(--ls-light-dark);
+    border-radius: 5px;
     width: calc(100% + 40px);
     padding: 0 20px;
     margin: 10px -20px;
@@ -43,6 +46,7 @@
     margin-left: -20px;
     width: calc(100% + 40px);
     padding: 5px 20px;
+    background: var(--ls-light);
 }
 
 /* Changes the background for list items that are in a even sequence */
@@ -86,6 +90,7 @@
     border-radius: 0 10px 10px 0;
 }
 
+/* Cards colors */
 .ls-card-primary {
     background: var(--ls-primary);
     color: var(--ls-light);
@@ -132,6 +137,48 @@
     background: var(--ls-dark);
     color: var(--ls-light);
     border: 2px solid var(--ls-dark-darker);
+}
+
+/* Themes */
+[data-ls-theme="dark"] .ls-card {
+    background: var(--ls-dark-light);
+    color: var(--ls-light);
+}
+
+[data-ls-theme="dark"] .ls-card-list {
+    border-color: var(--ls-dark);
+}
+
+[data-ls-theme="dark"] .ls-card-list-item {
+    background: var(--ls-dark);
+}
+
+[data-ls-theme="dark"] .ls-card-list-item:nth-child(even) {
+    background: var(--ls-dark-light);
+}
+
+[data-ls-theme="dark"] .ls-card-footer {
+    background: var(--ls-dark);
+}
+
+[data-ls-theme="light"] .ls-card {
+    background: var(--ls-light);
+}
+
+[data-ls-theme="light"] .ls-card-list {
+    border-color: var(--ls-light-dark);
+}
+
+[data-ls-theme="light"] .ls-card-list-item {
+    background: var(--ls-light);
+}
+
+[data-ls-theme="light"] .ls-card-list-item:nth-child(even) {
+    background: var(--ls-neutral-100);
+}
+
+[data-ls-theme="light"] .ls-card-footer {
+    background: var(--ls-neutral-300);
 }
 
 /* Resposivity */

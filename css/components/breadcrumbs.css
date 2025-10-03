@@ -1,3 +1,4 @@
+/* Main block */
 .ls-breadcrumb {
     display: flex;
     justify-content: flex-start;
@@ -5,6 +6,7 @@
     flex-wrap: wrap;
 }
 
+/* Items & Separators */
 .ls-breadcrumb-item {
     display: flex;
     justify-content: center;
@@ -14,19 +16,24 @@
 }
 
 .ls-breadcrumb-item::after {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
     content: var(--ls-breadcrumb-content);
     color: var(--ls-breadcrumb-color);
     margin-left: 15px;
     margin-right: 15px;
-    background-image: var(--ls-breadcrumb-img);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
+/* Themes */
+[data-ls-theme="light"] .ls-breadcrumb-item::after {
+    content: var(--ls-breadcrumb-content);
+    color: var(--ls-dark);
+}
+
+[data-ls-theme="dark"] .ls-breadcrumb-item::after {
+    content: var(--ls-breadcrumb-content);
+    color: var(--ls-light);
+}
+
+/* No separator in the last item */
 .ls-breadcrumb-item:last-child::after {
     content: "";
-    background-image: none;
 }

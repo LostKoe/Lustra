@@ -1,3 +1,4 @@
+/* Base style */
 .ls-btn {
     display: inline-block;
     background: var(--ls-light-dark);
@@ -22,6 +23,7 @@
     filter: brightness(75%);
 }
 
+/* Base colors */
 .ls-btn-primary {
     background: var(--ls-primary);
     color: var(--ls-light);
@@ -84,6 +86,7 @@
     filter: brightness(100%)
 }
 
+/* Outlined animations */
 .ls-btn-primary-outline {
     background: transparent;
     border: 2px solid var(--ls-primary);
@@ -180,6 +183,7 @@
     filter: brightness(100%);
 }
 
+/* Groups */
 .ls-btn-group {
     display: flex;
     justify-content: center;
@@ -225,6 +229,7 @@
     border-radius: 0 0 5px 5px;
 }
 
+/* Btn sizes */
 .ls-btn-sm {
     transform: scale(0.75);
 }
@@ -245,15 +250,18 @@
     transform: scale(2);
 }
 
+/* Disabled state */
 .ls-btn[disabled] {
     opacity: 0.5;
     pointer-events: none;
 }
 
+/* Block btn */
 .ls-btn-block {
     width: calc(100% - 10px);
 }
 
+/* Fill animations */
 .ls-btn-fill-primary,
 .ls-btn-fill-secondary,
 .ls-btn-fill-warning,
