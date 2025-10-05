@@ -1,0 +1,57 @@
+/*
+div.container
+    p.title
+
+    div.content
+    </
+</
+*/
+
+/* Container */
+
+.ls-dropdown {
+    position: relative;
+}
+
+.ls-dropdown-menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 5px 0;
+    width: max-content;
+    background: var(--ls-light);
+    border: 1px solid var(--ls-light-dark);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ls-dropdown-item {
+    margin: 0;
+    width: 100%;
+    padding: 5px 15px;
+    background: var(--ls-light);
+    list-style: none;
+    transition: background var(--ls-transition-fast);
+}
+
+.ls-dropdown-item:hover {
+    background: var(--ls-neutral-200);
+}
+
+.ls-dropdown-text {
+    cursor: pointer;
+}
+
+.ls-dropdown-text::after {
+    content: " ▴";
+}
+
+.ls-dropdown-primary .ls-dropdown-text {
+    background: transparent;
+}
