@@ -1,0 +1,27 @@
+.ls-text-h1 {
+    font-size: var(--ls-size-h1);
+}
+
+.ls-text-h2 {
+    font-size: var(--ls-size-h2);
+}
+
+.ls-text-h3 {
+    font-size: var(--ls-size-h3);
+}
+
+.ls-text-h4 {
+    font-size: var(--ls-size-h4);
+}
+
+.ls-text-h5 {
+    font-size: var(--ls-size-h5);
+}
+
+.ls-text-h6 {
+    font-size: var(--ls-size-h6);
+}
+
+.ls-text-p {
+    font-size: var(--ls-size-p);
+}

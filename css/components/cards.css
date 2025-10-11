@@ -6,6 +6,7 @@
     overflow: hidden;
     background: var(--ls-light);
     color: var(--ls-dark);
+    border: 1px solid var(--ls-light-dark);
     margin: 10px;
     padding: 10px 20px;
     border-radius: 10px;
@@ -77,7 +78,6 @@
 .ls-card-group .ls-card {
     margin: 0;
     box-shadow: none;
-    border: 1px solid var(--ls-neutral-300);
     border-radius: 0;
     min-height: 20px;
 }
@@ -90,96 +90,7 @@
     border-radius: 0 10px 10px 0;
 }
 
-/* Cards colors */
-.ls-card-primary {
-    background: var(--ls-primary);
-    color: var(--ls-light);
-    border: 2px solid var(--ls-primary-dark);
-}
-
-.ls-card-secondary {
-    background: var(--ls-secondary);
-    color: var(--ls-light);
-    border: 2px solid var(--ls-secondary-dark);
-}
-
-.ls-card-warning {
-    background: var(--ls-warning);
-    color: var(--ls-dark);
-    border: 2px solid var(--ls-warning-dark);
-}
-
-.ls-card-danger {
-    background: var(--ls-danger);
-    color: var(--ls-light);
-    border: 2px solid var(--ls-danger-dark);
-}
-
-.ls-card-success {
-    background: var(--ls-success);
-    color: var(--ls-dark);
-    border: 2px solid var(--ls-success-dark);
-}
-
-.ls-card-info {
-    background: var(--ls-info);
-    color: var(--ls-dark);
-    border: 2px solid var(--ls-info-dark);
-}
-
-.ls-card-light {
-    background: var(--ls-light);
-    color: var(--ls-dark);
-    border: 2px solid var(--ls-light-dark);
-}
-
-.ls-card-dark {
-    background: var(--ls-dark);
-    color: var(--ls-light);
-    border: 2px solid var(--ls-dark-darker);
-}
-
-/* Themes */
-[data-ls-theme="dark"] .ls-card {
-    background: var(--ls-dark-light);
-    color: var(--ls-light);
-}
-
-[data-ls-theme="dark"] .ls-card-list {
-    border-color: var(--ls-dark);
-}
-
-[data-ls-theme="dark"] .ls-card-list-item {
-    background: var(--ls-dark);
-}
-
-[data-ls-theme="dark"] .ls-card-list-item:nth-child(even) {
-    background: var(--ls-dark-light);
-}
-
-[data-ls-theme="dark"] .ls-card-footer {
-    background: var(--ls-dark);
-}
-
-[data-ls-theme="light"] .ls-card {
-    background: var(--ls-light);
-}
-
-[data-ls-theme="light"] .ls-card-list {
-    border-color: var(--ls-light-dark);
-}
-
-[data-ls-theme="light"] .ls-card-list-item {
-    background: var(--ls-light);
-}
-
-[data-ls-theme="light"] .ls-card-list-item:nth-child(even) {
-    background: var(--ls-neutral-100);
-}
-
-[data-ls-theme="light"] .ls-card-footer {
-    background: var(--ls-neutral-300);
-}
+/* Cards colors will be added soon */
 
 /* Resposivity */
 @media screen and (max-width: 425px) {

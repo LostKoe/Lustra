@@ -159,11 +159,11 @@
     --ls-shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3);
 
     /* Spacings */
-    --ls-spacing-sm: 2px;
-    --ls-spacing-md: 5px;
-    --ls-spacing-lg: 10px;
-    --ls-spacing-xl: 20px;
-    --ls-spacing-xxl: 35px;
+    --ls-spacing-sm: 0.5rem;
+    --ls-spacing-md: 1rem;
+    --ls-spacing-lg: 2rem;
+    --ls-spacing-xl: 3rem;
+    --ls-spacing-xxl: 4rem;
 
     /* Border radius */
     --ls-border-radius-sm: 2px;
@@ -177,17 +177,6 @@
     --ls-transition-medium: 0.4s;
     --ls-transition-slow: 0.6s;
     --ls-transition-slower: 0.8s;
-
-    /* Gradients */
-    --ls-grad-now-direction: var(--ls-grad-bottom);
-    --ls-grad-bottom: to bottom;
-    --ls-grad-bottom-right: to bottom right;
-    --ls-grad-right: to right;
-    --ls-grad-top-right: to top right;
-    --ls-grad-top: to top;
-    --ls-grad-top-left: to top left;
-    --ls-grad-left: to left;
-    --ls-grad-left-bottom: to left bottom;
 
     /* Components */
     --ls-breadcrumb-content: ">";
