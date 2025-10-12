@@ -12,7 +12,7 @@ li {
 body {
     background: var(--ls-light);
     color: var(--ls-dark);
-    font-family: var(--ls-font-sans-serif);
+    font-family: var(--ls-font-sans);
     height: 100vh;
 }
 

@@ -130,15 +130,11 @@
     --ls-size-h6: 0.75rem;
     --ls-size-p: 1rem;
 
-    /* Fonts familys */
-    --ls-font-sans-serif: "Inter", sans-serif;
-    --ls-font-monospace: "Source Code Pro", monospace;
-    --ls-font-serif: "Noto Serif", serif;
-    --ls-font-cursive: "Comic Relief", cursive;
-    /* Sadly I coundn't find any Fantasy fonts in Google Fonts */
-    --ls-font-iceland: "Iceland", sans-serif;
-    --ls-font-oi: "Oi", serif;
-    --ls-font-pixelify: "Pixelify Sans", sans-serif;
+    --ls-size-sm: 0.75rem;
+    --ls-size-md: 1rem;
+    --ls-size-lg: 1.25rem;
+    --ls-size-xl: 1.5rem;
+    --ls-size-xxl: 1.75rem;
 
     /* Fonts styles */
     --ls-font-weight-100: 100;
@@ -151,6 +147,13 @@
     --ls-font-weight-800: 800;
     --ls-font-weight-900: 900;
     --ls-font-style-italic: italic;
+
+    /* Font families */
+    --ls-font-serif: serif;
+    --ls-font-sans: sans-serif;
+    --ls-font-mono: monospace;
+    --ls-font-fantasy: fantasy;
+    --ls-font-cursive: cursive;
 
     /* Box shadows */
     --ls-shadow-sm: 0 2px 15px -5px rgba(0, 0, 0, 0.3);

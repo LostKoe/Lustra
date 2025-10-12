@@ -25,3 +25,23 @@
 .ls-text-p {
     font-size: var(--ls-size-p);
 }
+
+.ls-text-sm {
+    font-size: var(--ls-size-sm);
+}
+
+.ls-text-md {
+    font-size: var(--ls-size-md);
+}
+
+.ls-text-lg {
+    font-size: var(--ls-size-lg);
+}
+
+.ls-text-xl {
+    font-size: var(--ls-size-xl);
+}
+
+.ls-text-xxl {
+    font-size: var(--ls-size-xxl);
+}
