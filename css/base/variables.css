@@ -11,7 +11,7 @@
     --ls-link: rgb(28, 138, 255);
 
     /* Stylized main colors */
-    --ls-primary-dark: rgb(18, 126, 215);
+    --ls-primary-dark: rgb(0, 111, 202);
     --ls-primary-light: rgb(35, 156, 255);
     --ls-secondary-dark: rgb(12, 0, 71);
     --ls-secondary-light: rgb(27, 0, 162);
@@ -25,7 +25,7 @@
     --ls-info-light: rgb(149, 237, 255);
     --ls-dark-darker: rgb(7, 7, 7);
     --ls-dark-light: rgb(42, 42, 42);
-    --ls-light-dark: rgb(237, 237, 237);
+    --ls-light-dark: rgb(221, 221, 221);
     --ls-light-lighter: rgb(248, 248, 248);
     --ls-link-dark: rgb(0, 109, 226);
     --ls-link-light: rgb(66, 157, 255);

@@ -419,11 +419,11 @@
 }
 
 /* Auto change text colors (just for the main colors) */
-[data-ls-textColor="auto-change"] .ls-bg-primary,
-[data-ls-textColor="auto-change"] .ls-bg-secondary,
-[data-ls-textColor="auto-change"] .ls-bg-danger,
-[data-ls-textColor="auto-change"] .ls-bg-success,
-[data-ls-textColor="auto-change"] .ls-bg-info,
-[data-ls-textColor="auto-change"] .ls-bg-light {
+[data-ls-text-color="auto-change"] .ls-bg-primary,
+[data-ls-text-color="auto-change"] .ls-bg-secondary,
+[data-ls-text-color="auto-change"] .ls-bg-danger,
+[data-ls-text-color="auto-change"] .ls-bg-success,
+[data-ls-text-color="auto-change"] .ls-bg-info,
+[data-ls-text-color="auto-change"] .ls-bg-light {
     color: var(--ls-light);
 }

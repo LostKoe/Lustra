@@ -1,0 +1,215 @@
+/* Main father */
+.ls-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    padding: 15px 35px;
+    width: 100%;
+    margin: 0;
+    border-bottom: 3px solid var(--ls-light-dark);
+}
+
+/* Navbar title */
+.ls-navbar-brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+a.ls-navbar-brand {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Navbar menu */
+.ls-navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-direction: row;
+    list-style: none;
+}
+
+.ls-navbar-item {
+    margin: 0;
+}
+
+/* Themes */
+.ls-navbar-primary {
+    background: var(--ls-primary);
+    color: var(--ls-light);
+    border-bottom: 3px solid var(--ls-primary-dark);
+}
+
+.ls-navbar-primary .ls-navbar-burger span {
+    background: var(--ls-primary-dark);
+}
+
+.ls-navbar-primary .ls-navbar-burger-menu {
+    background: var(--ls-primary);
+    border-color: var(--ls-primary-dark);
+}
+
+.ls-navbar-secondary {
+    background: var(--ls-secondary);
+    color: var(--ls-light);
+    border-bottom: 3px solid var(--ls-secondary-dark);
+}
+
+.ls-navbar-secondary .ls-navbar-burger span {
+    background: var(--ls-secondary-light);
+    filter: brightness(135%);
+}
+
+.ls-navbar-secondary .ls-navbar-burger-menu {
+    background: var(--ls-secondary);
+    border-color: var(--ls-secondary-dark);
+}
+
+.ls-navbar-warning {
+    background: var(--ls-warning);
+    color: var(--ls-dark);
+    border-bottom: 3px solid var(--ls-warning-dark);
+}
+
+.ls-navbar-warning .ls-navbar-burger span {
+    background: var(--ls-warning-dark);
+}
+
+.ls-navbar-warning .ls-navbar-burger-menu {
+    background: var(--ls-warning);
+    border-color: var(--ls-warning-dark);
+}
+
+.ls-navbar-danger {
+    background: var(--ls-danger);
+    color: var(--ls-light);
+    border-bottom: 3px solid var(--ls-danger-dark);
+}
+
+.ls-navbar-danger .ls-navbar-burger span {
+    background: var(--ls-danger-dark);
+}
+
+.ls-navbar-danger .ls-navbar-burger-menu {
+    background: var(--ls-danger);
+    border-color: var(--ls-danger-dark);
+}
+
+.ls-navbar-success {
+    background: var(--ls-success);
+    color: var(--ls-dark);
+    border-bottom: 3px solid var(--ls-success-dark);
+}
+
+.ls-navbar-success .ls-navbar-burger span {
+    background: var(--ls-success-dark);
+}
+
+.ls-navbar-success .ls-navbar-burger-menu {
+    background: var(--ls-success);
+    border-color: var(--ls-success-dark);
+}
+
+.ls-navbar-info {
+    background: var(--ls-info);
+    color: var(--ls-dark);
+    border-bottom: 3px solid var(--ls-info-dark);
+}
+
+.ls-navbar-info .ls-navbar-burger span {
+    background: var(--ls-info-dark);
+}
+
+.ls-navbar-info .ls-navbar-burger-menu {
+    background: var(--ls-info);
+    border-color: var(--ls-info-dark);
+}
+
+.ls-navbar-light {
+    background: var(--ls-light);
+    color: var(--ls-dark);
+    border-bottom: 3px solid var(--ls-light-dark);
+}
+
+.ls-navbar-light .ls-navbar-burger span {
+    background: var(--ls-light-dark);
+}
+
+.ls-navbar-light .ls-navbar-burger-menu {
+    background: var(--ls-light);
+    border-color: var(--ls-light-dark);
+}
+
+.ls-navbar-dark {
+    background: var(--ls-dark);
+    color: var(--ls-light);
+    border-bottom: 3px solid var(--ls-dark-light);
+}
+
+.ls-navbar-dark .ls-navbar-burger span {
+    background: var(--ls-dark-darker);
+}
+
+.ls-navbar-dark .ls-navbar-burger-menu {
+    background: var(--ls-dark);
+    border-color: var(--ls-dark-light);
+}
+
+.ls-navbar-burger {
+    display: none;
+    visibility: hidden;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ls-navbar-burger span {
+    width: 100%;
+    height: 7px;
+    background: blue;
+    border-radius: 5px;
+}
+
+.ls-navbar-burger-menu {
+    display: none;
+    position: absolute;
+    right: 22.5px;
+    top: calc(100%);
+    background: var(--ls-danger);
+}
+
+@media screen and (max-width: 769px) {
+    .ls-navbar-menu {
+        display: none;
+    }
+
+    .ls-navbar-burger {
+        display: flex;
+        visibility: visible;
+    }
+
+    .ls-navbar-burger-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        list-style: none;
+        border-radius: 5px;
+        border: 3px solid var(--ls-danger-dark);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+}
