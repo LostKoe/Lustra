@@ -17,3 +17,7 @@
     margin-top: $value;
     margin-bottom: $value;
 }
+
+@mixin auto-width($margin, $width) {
+    width: calc($width - $margin);
+}
