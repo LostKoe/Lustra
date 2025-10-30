@@ -1,0 +1,28 @@
+@mixin padding-x($value) {
+    padding-left: $value;
+    padding-right: $value;
+}
+
+@mixin padding-y($value) {
+    padding-top: $value;
+    padding-bottom: $value;
+}
+
+@mixin margin-x($value) {
+    margin-left: $value;
+    margin-right: $value;
+}
+
+@mixin margin-y($value) {
+    margin-top: $value;
+    margin-bottom: $value;
+}
+
+@mixin auto-width($margin, $width) {
+    width: calc($width - $margin);
+}
+
+@mixin border($border, $radius) {
+    border: $border;
+    border-radius: $radius;
+}

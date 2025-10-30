@@ -5,6 +5,9 @@
     "editor.fontSize": 18,
     "editor.lineHeight": 1.35,
     "[js]": {
-        "editor.tabSize": 4
+      "editor.tabSize": 4
+    },
+    "[scss]": {
+      "editor.tabSize": 4
     }
 }

@@ -1,0 +1,35 @@
+@use "../shared/variables";
+@use "../shared/mixins";
+
+$_btn-colors: (
+    primary: (bg: variables.$primary, text: variables.$light),
+    secondary: (bg: variables.$secondary, text: variables.$light),
+    warning: (bg: variables.$warning, text: variables.$dark),
+);
+
+.btn {
+    @include mixins.border(none, 5px);
+    @include mixins.padding-x(2rem);
+    @include mixins.padding-y(0.5rem);
+    @include mixins.margin-y(0.5rem);
+    background: #ededed;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: brightness(95%);
+    }
+
+    &:active {
+        filter: brightness(85%);
+    }
+
+}
+
+@each $name, $props in $_btn-colors {
+    .btn-#{$name} {
+        background: map-get($props, bg);
+        color: map-get($props, text);
+    }
+}
