@@ -2,9 +2,14 @@
 @use "../shared/mixins";
 
 $_btn-colors: (
-    primary: (bg: variables.$primary, text: variables.$light),
-    secondary: (bg: variables.$secondary, text: variables.$light),
-    warning: (bg: variables.$warning, text: variables.$dark),
+    primary: (bg: variables.$primary, text: variables.$light, goDarker: true),
+    secondary: (bg: variables.$secondary, text: variables.$light, goDarker: true),
+    warning: (bg: variables.$warning, text: variables.$dark, goDarker: false),
+    danger: (bg: variables.$danger, text: variables.$light, goDarker: true),
+    success: (bg: variables.$success, text: variables.$light, goDarker: true),
+    info: (bg: variables.$info, text: variables.$dark, goDarker: false),
+    dark: (bg: variables.$dark, text: variables.$light, goDarker: false),
+    light: (bg: variables.$light, text: variables.$dark, goDarker: true),
 );
 
 .btn {
@@ -25,11 +30,34 @@ $_btn-colors: (
         filter: brightness(85%);
     }
 
+    &-link {
+        background: transparent;
+        color: variables.$primary;
+        text-decoration: underline;
+    }
 }
 
 @each $name, $props in $_btn-colors {
     .btn-#{$name} {
         background: map-get($props, bg);
         color: map-get($props, text);
+
+        &:hover {
+            @if map-get($props, goDarker) {
+                filter: brightness(95%);
+            }
+            @else {
+                filter: brightness(105%);
+            }
+        }
+
+        &:active {
+            @if map-get($props, goDarker) {
+                filter: brightness(85%);
+            }
+            @else {
+                filter: brightness(115%);
+            }
+        }
     }
 }

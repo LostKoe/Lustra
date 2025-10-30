@@ -1,4 +1,4 @@
-// This file contains all SCSS variables I'll use in the SCSS code, the center purpleor (the purpleors with -500) are all based in a done CSS purpleor, like red, green, yellow, cyan and so on
+// This file contains all SCSS variables I'll use in the SCSS code, the center colors (the colors with -500) are all based in a done CSS color, like red, green, yellow, cyan and so on
 
 // Primary group
 $primary: #007bff;
@@ -9,6 +9,8 @@ $warning: #ffc107;
 $info: #00ddff;
 $light: #f8f9fa;
 $dark: #343a40;
+$black: #000;
+$white: #fff;
 
 // Secondary group
 // Red
@@ -95,7 +97,7 @@ $green-850: hsl(120, 100%, 15%);
 $green-900: hsl(120, 100%, 10%);
 $green-950: hsl(120, 100%, 5%);
 
-// I tried to see a pattern for the dark green dark-blueors without mixing with the light green ones (the variables above this comment), but I couldn't make it, so I've simplified everything for green
+// I tried to see a pattern for the dark green colors without mixing with the light green ones (the variables above this comment), but I couldn't make it, so I've simplified everything for green
 
 // Light blue
 $light-blue-50: hsl(180, 100%, 95%);
@@ -161,23 +163,43 @@ $purple-900: hsl(275, 100%, 10%);
 $purple-950: hsl(275, 100%, 5%);
 
 // Pink
-$pink-50: hsl(300, 76%, 95%);
-$pink-100: hsl(300, 76%, 90%);
-$pink-150: hsl(300, 76%, 85%);
-$pink-200: hsl(300, 76%, 80%);
-$pink-250: hsl(300, 76%, 75%);
-$pink-300: hsl(300, 76%, 70%);
-$pink-350: hsl(300, 76%, 65%);
-$pink-400: hsl(300, 76%, 60%);
-$pink-450: hsl(300, 76%, 55%);
-$pink-500: hsl(300, 76%, 50%);
-$pink-550: hsl(300, 76%, 45%);
-$pink-600: hsl(300, 76%, 40%);
-$pink-650: hsl(300, 76%, 35%);
-$pink-700: hsl(300, 76%, 30%);
-$pink-750: hsl(300, 76%, 25%);
-$pink-800: hsl(300, 76%, 20%);
-$pink-850: hsl(300, 76%, 15%);
-$pink-900: hsl(300, 76%, 10%);
-$pink-950: hsl(300, 76%, 5%);
+$pink-50: hsl(328, 100%, 95%);
+$pink-100: hsl(328, 100%, 90%);
+$pink-150: hsl(328, 100%, 85%);
+$pink-200: hsl(328, 100%, 80%);
+$pink-250: hsl(328, 100%, 75%);
+$pink-300: hsl(328, 100%, 70%);
+$pink-350: hsl(328, 100%, 65%);
+$pink-400: hsl(328, 100%, 60%);
+$pink-450: hsl(328, 100%, 55%);
+$pink-500: hsl(328, 100%, 50%);
+$pink-550: hsl(328, 100%, 45%);
+$pink-600: hsl(328, 100%, 40%);
+$pink-650: hsl(328, 100%, 35%);
+$pink-700: hsl(328, 100%, 30%);
+$pink-750: hsl(328, 100%, 25%);
+$pink-800: hsl(328, 100%, 20%);
+$pink-850: hsl(328, 100%, 15%);
+$pink-900: hsl(328, 100%, 10%);
+$pink-950: hsl(328, 100%, 5%);
 
+// Neutral
+$neutral-50: hsl(0, 0%, 95%);
+$neutral-100: hsl(0, 0%, 90%);
+$neutral-150: hsl(0, 0%, 85%);
+$neutral-200: hsl(0, 0%, 80%);
+$neutral-250: hsl(0, 0%, 75%);
+$neutral-300: hsl(0, 0%, 70%);
+$neutral-350: hsl(0, 0%, 65%);
+$neutral-400: hsl(0, 0%, 60%);
+$neutral-450: hsl(0, 0%, 55%);
+$neutral-500: hsl(0, 0%, 50%);
+$neutral-550: hsl(0, 0%, 45%);
+$neutral-600: hsl(0, 0%, 40%);
+$neutral-650: hsl(0, 0%, 35%);
+$neutral-700: hsl(0, 0%, 30%);
+$neutral-750: hsl(0, 0%, 25%);
+$neutral-800: hsl(0, 0%, 20%);
+$neutral-850: hsl(0, 0%, 15%);
+$neutral-900: hsl(0, 0%, 10%);
+$neutral-950: hsl(0, 0%, 5%);

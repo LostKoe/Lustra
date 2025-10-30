@@ -18,18 +18,96 @@
 .btn:active {
   filter: brightness(85%);
 }
+.btn-link {
+  background: transparent;
+  color: #007bff;
+  text-decoration: underline;
+}
 
 .btn-primary {
   background: #007bff;
   color: #f8f9fa;
+}
+.btn-primary:hover {
+  filter: brightness(95%);
+}
+.btn-primary:active {
+  filter: brightness(85%);
 }
 
 .btn-secondary {
   background: #6c757d;
   color: #f8f9fa;
 }
+.btn-secondary:hover {
+  filter: brightness(95%);
+}
+.btn-secondary:active {
+  filter: brightness(85%);
+}
 
 .btn-warning {
   background: #ffc107;
   color: #343a40;
+}
+.btn-warning:hover {
+  filter: brightness(105%);
+}
+.btn-warning:active {
+  filter: brightness(115%);
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: #f8f9fa;
+}
+.btn-danger:hover {
+  filter: brightness(95%);
+}
+.btn-danger:active {
+  filter: brightness(85%);
+}
+
+.btn-success {
+  background: #28a745;
+  color: #f8f9fa;
+}
+.btn-success:hover {
+  filter: brightness(95%);
+}
+.btn-success:active {
+  filter: brightness(85%);
+}
+
+.btn-info {
+  background: #00ddff;
+  color: #343a40;
+}
+.btn-info:hover {
+  filter: brightness(105%);
+}
+.btn-info:active {
+  filter: brightness(115%);
+}
+
+.btn-dark {
+  background: #343a40;
+  color: #f8f9fa;
+}
+.btn-dark:hover {
+  filter: brightness(105%);
+}
+.btn-dark:active {
+  filter: brightness(115%);
+}
+
+.btn-light {
+  background: #f8f9fa;
+  color: #343a40;
+}
+.btn-light:hover {
+  filter: brightness(95%);
+}
+.btn-light:active {
+  filter: brightness(85%);
 }/*# sourceMappingURL=btn.css.map */
