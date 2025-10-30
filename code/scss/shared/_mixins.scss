@@ -21,3 +21,8 @@
 @mixin auto-width($margin, $width) {
     width: calc($width - $margin);
 }
+
+@mixin border($border, $radius) {
+    border: $border;
+    border-radius: $radius;
+}
