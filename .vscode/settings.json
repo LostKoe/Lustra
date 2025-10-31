@@ -9,5 +9,12 @@
     },
     "[scss]": {
       "editor.tabSize": 4
-    }
+    },
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/code/scss/compiled"
+      }
+    ],
 }

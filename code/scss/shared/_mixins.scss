@@ -18,8 +18,8 @@
     margin-bottom: $value;
 }
 
-@mixin auto-width($margin, $width) {
-    width: calc($width - $margin);
+@mixin auto-width($width, $margin) {
+    width: calc($width - $margin / 2);
 }
 
 @mixin border($border, $radius) {
