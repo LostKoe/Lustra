@@ -91,6 +91,10 @@ $_btn-outline: (
     }
 }
 
+a.btn {
+    text-decoration: none;
+}
+
 @each $name, $props in $_btn-colors {
     .btn-#{$name} {
         background: map-get($props, bg);
@@ -116,7 +120,7 @@ $_btn-outline: (
         }
 
         &.btn-active {
-            pointer-events: none;
+            cursor: default;
 
             @if map-get($props, goDarker) {
                 filter: brightness(85%);
@@ -147,6 +151,19 @@ $_btn-outline: (
             background: map-get($colors, bg);
             color: map-get($colors, text);
             filter: brightness(100%);
+        }
+
+        &.btn-active {
+            background: map-get($colors, bg);
+            color: map-get($colors, text);
+
+            &:hover {
+                @if $name == "dark" {
+                    filter: brightness(115%);
+                } @else {
+                    filter: brightness(85%);
+                }
+            }
         }
     }
 }
