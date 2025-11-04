@@ -54,6 +54,19 @@
 .btn-group-vertical .btn:last-child {
   border-radius: 0 0 0.5rem 0.5rem;
 }
+.btn-with-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.btn-with-icon .btn-icon {
+  position: absolute;
+  height: 20px;
+  left: 1rem;
+}
+.btn-with-icon span {
+  margin-left: 1rem;
+}
 
 a.btn {
   text-decoration: none;

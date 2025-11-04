@@ -89,6 +89,22 @@ $_btn-outline: (
             }
         }
     }
+
+    &-with-icon {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        & .btn-icon {
+            position: absolute;
+            height: 20px;
+            left: 1rem;
+        }
+
+        & span {
+            margin-left: 1rem;
+        }
+    }
 }
 
 a.btn {
