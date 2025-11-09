@@ -1,3 +1,5 @@
+@use "../shared/variables";
+
 @mixin padding-x($value) {
     padding-left: $value;
     padding-right: $value;
@@ -25,4 +27,54 @@
 @mixin border($border, $radius) {
     border: $border;
     border-radius: $radius;
+}
+
+@mixin color-primary($transparency) {
+    background: rgba(0, 123, 255, $transparency);
+    color: rgba(248, 249, 250, $transparency);
+}
+
+@mixin color-secondary($transparency) {
+    background: rgba(108, 117, 125, $transparency);
+    color: rgba(248, 249, 250, $transparency);
+}
+
+@mixin color-warning($transparency) {
+    background: rgba(255, 193, 7, $transparency);
+    color: rgba(52, 58, 64, $transparency);
+}
+
+@mixin color-danger($transparency) {
+    background: rgba(220, 53, 69, $transparency);
+    color: rgba(248, 249, 250, $transparency);
+}
+
+@mixin color-success($transparency) {
+    background: rgba(40, 167, 69, $transparency);
+    color: rgba(248, 249, 250, $transparency);
+}
+
+@mixin color-info($transparency) {
+    background: rgba(0, 221, 255, $transparency);
+    color: rgba(52, 58, 64, $transparency);
+}
+
+@mixin color-light($transparency) {
+    background: rgba(248, 249, 250, $transparency);
+    color: rgba(52, 58, 64, $transparency);
+}
+
+@mixin color-dark($transparency) {
+    background: rgba(52, 58, 64, $transparency);
+    color: rgba(248, 249, 250, $transparency);
+}
+
+@mixin alert-color($name, $textLight) {
+    background: $name;
+    @if $textLight {
+        color: rgb(248, 249, 250);
+    }
+    @else {
+        color: rgb(52, 58, 64)
+    }
 }

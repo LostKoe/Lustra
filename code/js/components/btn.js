@@ -31,12 +31,4 @@ export function LustraBtns() {
             })
         })
     })
-
-    const toggleBtn = document.querySelectorAll(".btn[data-ls-toggle='button']")
-
-    toggleBtn.forEach((element), () => {
-        element.addEventListener("click", () => {
-            element.classList.toggle("btn-active")
-        })
-    })
 }

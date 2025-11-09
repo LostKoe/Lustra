@@ -1,0 +1,104 @@
+@use "../shared/mixins";
+@use "../shared/variables";
+
+$_alerts-color: (
+    primary: true,
+    secondary: true,
+    warning: false,
+    danger: true,
+    success: true,
+    info: false,
+    light: false,
+    dark: true
+);
+
+.alert {
+    background: transparent;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    @include mixins.padding-x(1.5rem);
+    @include mixins.padding-y(1rem);
+    @include mixins.margin-x(1rem);
+    @include mixins.margin-y(0.5rem);
+    @include mixins.border(none, 0.5rem);
+
+    a {
+        font-weight: bold;
+        color: map-get(variables.$main-colors, dark);
+    }
+
+    &-with-icon {
+        display: flex;
+        align-items: center;
+        column-gap: 1.5rem;
+
+        .alert-icon {
+            height: 100%;
+        }
+    }
+
+    &-dismissible {
+        @extend .alert-with-icon;
+
+        div:first-child {
+            width: 100%;
+        }
+    }
+
+    .alert-dimiss-btn {
+        justify-self: flex-end;
+        align-self: flex-start;
+        background: transparent;
+        border: none;
+        min-width: 3.5rem;
+        min-height: 2rem;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}
+
+@each $color, $props in $_alerts-color {
+    .alert-#{$color} {
+        background: map-get(variables.$main-colors, $color);
+
+        @if $props {
+            color: map-get(variables.$main-colors, light);
+
+            .alert-dimiss-btn {
+                color: map-get(variables.$main-colors, light);
+            }
+        }
+        @else {
+            color: map-get(variables.$main-colors, dark);
+
+            .alert-dimiss-btn {
+                color: map-get(variables.$main-colors, dark);
+            }
+        }
+
+        a {
+            @if $props {
+                color: map-get(variables.$main-colors, light);
+            }
+            @else {
+                color: map-get(variables.$main-colors, dark);
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .alert-with-icon {
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .alert-dimiss-btn {
+        display:inline-block;
+        width: max-content;
+        margin: 0 auto;
+    }
+}

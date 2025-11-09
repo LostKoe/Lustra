@@ -1,17 +1,19 @@
 @use "../shared/variables";
 @use "../shared/mixins";
 
+// Internal variable for all button background colors and text colors. The doDarker property asks if the button is going to get darker or not when there's a hover and active action
 $_btn-colors: (
-    primary: (bg: variables.$primary, text: variables.$light, goDarker: true),
-    secondary: (bg: variables.$secondary, text: variables.$light, goDarker: true),
-    warning: (bg: variables.$warning, text: variables.$dark, goDarker: false),
-    danger: (bg: variables.$danger, text: variables.$light, goDarker: true),
-    success: (bg: variables.$success, text: variables.$light, goDarker: true),
-    info: (bg: variables.$info, text: variables.$dark, goDarker: false),
-    dark: (bg: variables.$dark, text: variables.$light, goDarker: false),
-    light: (bg: variables.$light, text: variables.$dark, goDarker: true),
+    primary: (bg: map-get(variables.$main-colors, primary), text: map-get(variables.$main-colors, light), goDarker: true),
+    secondary: (bg: map-get(variables.$main-colors, secondary), text: map-get(variables.$main-colors, light), goDarker: true),
+    warning: (bg: map-get(variables.$main-colors, warning), text: map-get(variables.$main-colors, dark), goDarker: false),
+    danger: (bg: map-get(variables.$main-colors, danger), text: map-get(variables.$main-colors, light), goDarker: true),
+    success: (bg: map-get(variables.$main-colors, success), text: map-get(variables.$main-colors, light), goDarker: true),
+    info: (bg: map-get(variables.$main-colors, info), text: map-get(variables.$main-colors, dark), goDarker: false),
+    dark: (bg: map-get(variables.$main-colors, dark), text: map-get(variables.$main-colors, light), goDarker: false),
+    light: (bg: map-get(variables.$main-colors, light), text: map-get(variables.$main-colors, dark), goDarker: true),
 );
 
+// All button sizes
 $_btn-size: (
     sm: 0.5rem,
     md: 1rem,
@@ -20,17 +22,19 @@ $_btn-size: (
     xxl: 2.5rem,
 );
 
+// All outlined buttons, with a property for the background and the text color
 $_btn-outline: (
-    primary: (bg: variables.$primary, text: variables.$light),
-    secondary: (bg: variables.$secondary, text: variables.$light),
-    warning: (bg: variables.$warning, text: variables.$dark),
-    danger: (bg: variables.$danger, text: variables.$light),
-    success: (bg: variables.$success, text: variables.$light),
-    info: (bg: variables.$info, text: variables.$dark),
-    light: (bg: variables.$light, text: variables.$dark),
-    dark: (bg: variables.$dark, text: variables.$light),
+    primary: (bg: map-get(variables.$main-colors, primary), text: map-get(variables.$main-colors, light)),
+    secondary: (bg: map-get(variables.$main-colors, secondary), text: map-get(variables.$main-colors, light)),
+    warning: (bg: map-get(variables.$main-colors, warning), text: map-get(variables.$main-colors, dark)),
+    danger: (bg: map-get(variables.$main-colors, danger), text: map-get(variables.$main-colors, light)),
+    success: (bg: map-get(variables.$main-colors, success), text: map-get(variables.$main-colors, light)),
+    info: (bg: map-get(variables.$main-colors, info), text: map-get(variables.$main-colors, dark)),
+    light: (bg: map-get(variables.$main-colors, light), text: map-get(variables.$main-colors, dark)),
+    dark: (bg: map-get(variables.$main-colors, dark), text: map-get(variables.$main-colors, light)),
 );
 
+// Main style
 .btn {
     @include mixins.border(none, 0.5rem);
     @include mixins.padding-x(2rem);
@@ -42,16 +46,19 @@ $_btn-outline: (
     text-align: center;
     transition: filter 0.2s, background 0.2s, color 0.2s;
 
+    // Link buttons
     &-link {
         background: transparent;
-        color: variables.$primary;
+        color: map-get(variables.$main-colors, primary);
         text-decoration: underline;
     }
 
+    // Block buttons
     &-block {
         @include mixins.auto-width(100%, 0.5rem)
     }
 
+    // Multiple buttons in row
     &-group {
         display: flex;
 
@@ -69,6 +76,7 @@ $_btn-outline: (
             }
         }
 
+        // Multiple buttons in column
         &-vertical {
             display: flex;
             flex-direction: column;
@@ -90,6 +98,7 @@ $_btn-outline: (
         }
     }
 
+    // Button with icon (there's a chance of having some errors, so be careful)
     &-with-icon {
         display: flex;
         align-items: center;
@@ -107,16 +116,19 @@ $_btn-outline: (
     }
 }
 
+// Anchor tag with base button class
 a.btn {
     text-decoration: none;
 }
 
+// Creates all button colors
 @each $name, $props in $_btn-colors {
     .btn-#{$name} {
         background: map-get($props, bg);
         color: map-get($props, text);
         box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
 
+        // Mouse actions that make the button lighter or darker
         &:hover {
             @if map-get($props, goDarker) {
                 filter: brightness(95%);
@@ -135,9 +147,11 @@ a.btn {
             }
         }
 
+        // Color buttons when active
         &.btn-active {
             cursor: default;
 
+            // Another checker that determinates if the button will get darker or lighter
             @if map-get($props, goDarker) {
                 filter: brightness(85%);
             }
@@ -148,6 +162,7 @@ a.btn {
     }
 }
 
+// Creates all buttons sizes
 @each $size, $value in $_btn-size {
     .btn-#{$size} {
         font-size: $value;
@@ -157,6 +172,7 @@ a.btn {
     }
 }
 
+// Creates all outlined buttons
 @each $name, $colors in $_btn-outline {
     .btn-outline-#{$name} {
         background: transparent;

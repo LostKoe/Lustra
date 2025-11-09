@@ -1,16 +1,18 @@
 // This file contains all SCSS variables I'll use in the SCSS code, the center colors (the colors with -500) are all based in a done CSS color, like red, green, yellow, cyan and so on
 
 // Primary group
-$primary: #007bff;
-$secondary: #6c757d;
-$success: #28a745;
-$danger: #dc3545;
-$warning: #ffc107;
-$info: #00ddff;
-$light: #f8f9fa;
-$dark: #343a40;
-$black: #000;
-$white: #fff;
+$main-colors: (
+    primary: #007bff,
+    secondary: #6c757d,
+    success: #28a745,
+    warning: #ffc107,
+    danger: #dc3545,
+    info: #00ddff,
+    light: #f8f9fa,
+    dark: #343a40,
+    black: #000,
+    white: #fff,
+);
 
 // Secondary group
 // Red
