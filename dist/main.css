@@ -1,3 +1,9 @@
+/* Components */
 @import url("../code/scss/compiled/btn.css");
-@import url("../code/scss/compiled/reset.css");
 @import url("../code/scss/compiled/alert.css");
+
+/* Utilities */
+@import url("../code/scss/compiled/display.css");
+
+/* Others */
+@import url("../code/scss/compiled/reset.css");
