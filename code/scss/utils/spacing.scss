@@ -1,0 +1,65 @@
+@use "../shared/mixins";
+
+$_spacings-directions: x, y, t, b, l, r;
+$_spacing-gap-direction: x, y;
+
+@mixin _spacing-mixin($name, $direction, $value) {
+    @if $direction == x {
+        #{$name}-left: $value;
+        #{$name}-right: $value;
+    } @else if $direction == y {
+        #{$name}-top: $value;
+        #{$name}-bottom: $value;
+    } @else if $direction == t {
+        #{$name}-top: $value;
+    } @else if $direction == b {
+        #{$name}-bottom: $value;
+    } @else if $direction == l {
+        #{$name}-left: $value;
+    } @else if $direction == r {
+        #{$name}-right: $value;
+    } @else {
+        #{$name}: $value;
+    }
+}
+@mixin _spacing-gap($direction, $value) {
+    @if $direction == x {
+        row-gap: $value;
+    } @else if $direction == y {
+        column-gap: $value;
+    } @else {
+        gap: $value;
+    }
+}
+
+@for $i from 1 through 10 {
+    $value: $i / 2 * 1rem;
+
+    .m-#{$i} {
+        @include _spacing-mixin(margin, null, $value);
+    }
+
+    .p-#{$i} {
+        @include _spacing-mixin(padding, null, $value);
+    }
+
+    .gap-#{$i} {
+        @include _spacing-gap(null, $value);
+    }
+
+    @each $direction in $_spacings-directions {
+        .m#{$direction}-#{$i} {
+            @include _spacing-mixin(margin, $direction, $value);
+        }
+
+        .p#{$direction}-#{$i} {
+            @include _spacing-mixin(padding, $direction, $value)
+        }
+    }
+
+    @each $direction in $_spacing-gap-direction {
+        .g#{$direction}-#{$i} {
+            @include _spacing-gap($direction, $value);
+        }
+    }
+}
