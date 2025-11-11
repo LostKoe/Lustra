@@ -2,7 +2,15 @@
   margin: 0.5rem;
 }
 
+.hover\:m-1:hover {
+  margin: 0.5rem;
+}
+
 .p-1 {
+  padding: 0.5rem;
+}
+
+.hover\:p-1:hover {
   padding: 0.5rem;
 }
 
@@ -10,7 +18,16 @@
   gap: 0.5rem;
 }
 
+.hover\:gap-1:hover {
+  gap: 0.5rem;
+}
+
 .mx-1 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.hover\:mx-1:hover {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -20,7 +37,17 @@
   padding-right: 0.5rem;
 }
 
+.hover\:px-1:hover {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .my-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hover\:my-1:hover {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -30,7 +57,16 @@
   padding-bottom: 0.5rem;
 }
 
+.hover\:py-1:hover {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .mt-1 {
+  margin-top: 0.5rem;
+}
+
+.hover\:mt-1:hover {
   margin-top: 0.5rem;
 }
 
@@ -38,7 +74,15 @@
   padding-top: 0.5rem;
 }
 
+.hover\:pt-1:hover {
+  padding-top: 0.5rem;
+}
+
 .mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.hover\:mb-1:hover {
   margin-bottom: 0.5rem;
 }
 
@@ -46,7 +90,15 @@
   padding-bottom: 0.5rem;
 }
 
+.hover\:pb-1:hover {
+  padding-bottom: 0.5rem;
+}
+
 .ml-1 {
+  margin-left: 0.5rem;
+}
+
+.hover\:ml-1:hover {
   margin-left: 0.5rem;
 }
 
@@ -54,7 +106,15 @@
   padding-left: 0.5rem;
 }
 
+.hover\:pl-1:hover {
+  padding-left: 0.5rem;
+}
+
 .mr-1 {
+  margin-right: 0.5rem;
+}
+
+.hover\:mr-1:hover {
   margin-right: 0.5rem;
 }
 
@@ -62,7 +122,15 @@
   padding-right: 0.5rem;
 }
 
+.hover\:pr-1:hover {
+  padding-right: 0.5rem;
+}
+
 .gx-1 {
+  row-gap: 0.5rem;
+}
+
+.hover\:gx-1:hover {
   row-gap: 0.5rem;
 }
 
@@ -71,7 +139,16 @@
        column-gap: 0.5rem;
 }
 
+.hover\:gy-1:hover {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
 .m-2 {
+  margin: 1rem;
+}
+
+.hover\:m-2:hover {
   margin: 1rem;
 }
 
@@ -79,11 +156,24 @@
   padding: 1rem;
 }
 
+.hover\:p-2:hover {
+  padding: 1rem;
+}
+
 .gap-2 {
   gap: 1rem;
 }
 
+.hover\:gap-2:hover {
+  gap: 1rem;
+}
+
 .mx-2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.hover\:mx-2:hover {
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -93,7 +183,17 @@
   padding-right: 1rem;
 }
 
+.hover\:px-2:hover {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .my-2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hover\:my-2:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -103,7 +203,16 @@
   padding-bottom: 1rem;
 }
 
+.hover\:py-2:hover {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .mt-2 {
+  margin-top: 1rem;
+}
+
+.hover\:mt-2:hover {
   margin-top: 1rem;
 }
 
@@ -111,7 +220,15 @@
   padding-top: 1rem;
 }
 
+.hover\:pt-2:hover {
+  padding-top: 1rem;
+}
+
 .mb-2 {
+  margin-bottom: 1rem;
+}
+
+.hover\:mb-2:hover {
   margin-bottom: 1rem;
 }
 
@@ -119,7 +236,15 @@
   padding-bottom: 1rem;
 }
 
+.hover\:pb-2:hover {
+  padding-bottom: 1rem;
+}
+
 .ml-2 {
+  margin-left: 1rem;
+}
+
+.hover\:ml-2:hover {
   margin-left: 1rem;
 }
 
@@ -127,7 +252,15 @@
   padding-left: 1rem;
 }
 
+.hover\:pl-2:hover {
+  padding-left: 1rem;
+}
+
 .mr-2 {
+  margin-right: 1rem;
+}
+
+.hover\:mr-2:hover {
   margin-right: 1rem;
 }
 
@@ -135,7 +268,15 @@
   padding-right: 1rem;
 }
 
+.hover\:pr-2:hover {
+  padding-right: 1rem;
+}
+
 .gx-2 {
+  row-gap: 1rem;
+}
+
+.hover\:gx-2:hover {
   row-gap: 1rem;
 }
 
@@ -144,7 +285,16 @@
        column-gap: 1rem;
 }
 
+.hover\:gy-2:hover {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
 .m-3 {
+  margin: 1.5rem;
+}
+
+.hover\:m-3:hover {
   margin: 1.5rem;
 }
 
@@ -152,11 +302,24 @@
   padding: 1.5rem;
 }
 
+.hover\:p-3:hover {
+  padding: 1.5rem;
+}
+
 .gap-3 {
   gap: 1.5rem;
 }
 
+.hover\:gap-3:hover {
+  gap: 1.5rem;
+}
+
 .mx-3 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.hover\:mx-3:hover {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -166,7 +329,17 @@
   padding-right: 1.5rem;
 }
 
+.hover\:px-3:hover {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .my-3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hover\:my-3:hover {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -176,7 +349,16 @@
   padding-bottom: 1.5rem;
 }
 
+.hover\:py-3:hover {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .mt-3 {
+  margin-top: 1.5rem;
+}
+
+.hover\:mt-3:hover {
   margin-top: 1.5rem;
 }
 
@@ -184,7 +366,15 @@
   padding-top: 1.5rem;
 }
 
+.hover\:pt-3:hover {
+  padding-top: 1.5rem;
+}
+
 .mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.hover\:mb-3:hover {
   margin-bottom: 1.5rem;
 }
 
@@ -192,7 +382,15 @@
   padding-bottom: 1.5rem;
 }
 
+.hover\:pb-3:hover {
+  padding-bottom: 1.5rem;
+}
+
 .ml-3 {
+  margin-left: 1.5rem;
+}
+
+.hover\:ml-3:hover {
   margin-left: 1.5rem;
 }
 
@@ -200,7 +398,15 @@
   padding-left: 1.5rem;
 }
 
+.hover\:pl-3:hover {
+  padding-left: 1.5rem;
+}
+
 .mr-3 {
+  margin-right: 1.5rem;
+}
+
+.hover\:mr-3:hover {
   margin-right: 1.5rem;
 }
 
@@ -208,7 +414,15 @@
   padding-right: 1.5rem;
 }
 
+.hover\:pr-3:hover {
+  padding-right: 1.5rem;
+}
+
 .gx-3 {
+  row-gap: 1.5rem;
+}
+
+.hover\:gx-3:hover {
   row-gap: 1.5rem;
 }
 
@@ -217,7 +431,16 @@
        column-gap: 1.5rem;
 }
 
+.hover\:gy-3:hover {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
 .m-4 {
+  margin: 2rem;
+}
+
+.hover\:m-4:hover {
   margin: 2rem;
 }
 
@@ -225,11 +448,24 @@
   padding: 2rem;
 }
 
+.hover\:p-4:hover {
+  padding: 2rem;
+}
+
 .gap-4 {
   gap: 2rem;
 }
 
+.hover\:gap-4:hover {
+  gap: 2rem;
+}
+
 .mx-4 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.hover\:mx-4:hover {
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -239,7 +475,17 @@
   padding-right: 2rem;
 }
 
+.hover\:px-4:hover {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .my-4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hover\:my-4:hover {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -249,7 +495,16 @@
   padding-bottom: 2rem;
 }
 
+.hover\:py-4:hover {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .mt-4 {
+  margin-top: 2rem;
+}
+
+.hover\:mt-4:hover {
   margin-top: 2rem;
 }
 
@@ -257,7 +512,15 @@
   padding-top: 2rem;
 }
 
+.hover\:pt-4:hover {
+  padding-top: 2rem;
+}
+
 .mb-4 {
+  margin-bottom: 2rem;
+}
+
+.hover\:mb-4:hover {
   margin-bottom: 2rem;
 }
 
@@ -265,7 +528,15 @@
   padding-bottom: 2rem;
 }
 
+.hover\:pb-4:hover {
+  padding-bottom: 2rem;
+}
+
 .ml-4 {
+  margin-left: 2rem;
+}
+
+.hover\:ml-4:hover {
   margin-left: 2rem;
 }
 
@@ -273,7 +544,15 @@
   padding-left: 2rem;
 }
 
+.hover\:pl-4:hover {
+  padding-left: 2rem;
+}
+
 .mr-4 {
+  margin-right: 2rem;
+}
+
+.hover\:mr-4:hover {
   margin-right: 2rem;
 }
 
@@ -281,7 +560,15 @@
   padding-right: 2rem;
 }
 
+.hover\:pr-4:hover {
+  padding-right: 2rem;
+}
+
 .gx-4 {
+  row-gap: 2rem;
+}
+
+.hover\:gx-4:hover {
   row-gap: 2rem;
 }
 
@@ -290,7 +577,16 @@
        column-gap: 2rem;
 }
 
+.hover\:gy-4:hover {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
 .m-5 {
+  margin: 2.5rem;
+}
+
+.hover\:m-5:hover {
   margin: 2.5rem;
 }
 
@@ -298,11 +594,24 @@
   padding: 2.5rem;
 }
 
+.hover\:p-5:hover {
+  padding: 2.5rem;
+}
+
 .gap-5 {
   gap: 2.5rem;
 }
 
+.hover\:gap-5:hover {
+  gap: 2.5rem;
+}
+
 .mx-5 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.hover\:mx-5:hover {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
@@ -312,7 +621,17 @@
   padding-right: 2.5rem;
 }
 
+.hover\:px-5:hover {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .my-5 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.hover\:my-5:hover {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -322,7 +641,16 @@
   padding-bottom: 2.5rem;
 }
 
+.hover\:py-5:hover {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .mt-5 {
+  margin-top: 2.5rem;
+}
+
+.hover\:mt-5:hover {
   margin-top: 2.5rem;
 }
 
@@ -330,7 +658,15 @@
   padding-top: 2.5rem;
 }
 
+.hover\:pt-5:hover {
+  padding-top: 2.5rem;
+}
+
 .mb-5 {
+  margin-bottom: 2.5rem;
+}
+
+.hover\:mb-5:hover {
   margin-bottom: 2.5rem;
 }
 
@@ -338,7 +674,15 @@
   padding-bottom: 2.5rem;
 }
 
+.hover\:pb-5:hover {
+  padding-bottom: 2.5rem;
+}
+
 .ml-5 {
+  margin-left: 2.5rem;
+}
+
+.hover\:ml-5:hover {
   margin-left: 2.5rem;
 }
 
@@ -346,7 +690,15 @@
   padding-left: 2.5rem;
 }
 
+.hover\:pl-5:hover {
+  padding-left: 2.5rem;
+}
+
 .mr-5 {
+  margin-right: 2.5rem;
+}
+
+.hover\:mr-5:hover {
   margin-right: 2.5rem;
 }
 
@@ -354,7 +706,15 @@
   padding-right: 2.5rem;
 }
 
+.hover\:pr-5:hover {
+  padding-right: 2.5rem;
+}
+
 .gx-5 {
+  row-gap: 2.5rem;
+}
+
+.hover\:gx-5:hover {
   row-gap: 2.5rem;
 }
 
@@ -363,7 +723,16 @@
        column-gap: 2.5rem;
 }
 
+.hover\:gy-5:hover {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
 .m-6 {
+  margin: 3rem;
+}
+
+.hover\:m-6:hover {
   margin: 3rem;
 }
 
@@ -371,11 +740,24 @@
   padding: 3rem;
 }
 
+.hover\:p-6:hover {
+  padding: 3rem;
+}
+
 .gap-6 {
   gap: 3rem;
 }
 
+.hover\:gap-6:hover {
+  gap: 3rem;
+}
+
 .mx-6 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.hover\:mx-6:hover {
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -385,7 +767,17 @@
   padding-right: 3rem;
 }
 
+.hover\:px-6:hover {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .my-6 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.hover\:my-6:hover {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -395,7 +787,16 @@
   padding-bottom: 3rem;
 }
 
+.hover\:py-6:hover {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .mt-6 {
+  margin-top: 3rem;
+}
+
+.hover\:mt-6:hover {
   margin-top: 3rem;
 }
 
@@ -403,7 +804,15 @@
   padding-top: 3rem;
 }
 
+.hover\:pt-6:hover {
+  padding-top: 3rem;
+}
+
 .mb-6 {
+  margin-bottom: 3rem;
+}
+
+.hover\:mb-6:hover {
   margin-bottom: 3rem;
 }
 
@@ -411,7 +820,15 @@
   padding-bottom: 3rem;
 }
 
+.hover\:pb-6:hover {
+  padding-bottom: 3rem;
+}
+
 .ml-6 {
+  margin-left: 3rem;
+}
+
+.hover\:ml-6:hover {
   margin-left: 3rem;
 }
 
@@ -419,7 +836,15 @@
   padding-left: 3rem;
 }
 
+.hover\:pl-6:hover {
+  padding-left: 3rem;
+}
+
 .mr-6 {
+  margin-right: 3rem;
+}
+
+.hover\:mr-6:hover {
   margin-right: 3rem;
 }
 
@@ -427,7 +852,15 @@
   padding-right: 3rem;
 }
 
+.hover\:pr-6:hover {
+  padding-right: 3rem;
+}
+
 .gx-6 {
+  row-gap: 3rem;
+}
+
+.hover\:gx-6:hover {
   row-gap: 3rem;
 }
 
@@ -436,7 +869,16 @@
        column-gap: 3rem;
 }
 
+.hover\:gy-6:hover {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
 .m-7 {
+  margin: 3.5rem;
+}
+
+.hover\:m-7:hover {
   margin: 3.5rem;
 }
 
@@ -444,11 +886,24 @@
   padding: 3.5rem;
 }
 
+.hover\:p-7:hover {
+  padding: 3.5rem;
+}
+
 .gap-7 {
   gap: 3.5rem;
 }
 
+.hover\:gap-7:hover {
+  gap: 3.5rem;
+}
+
 .mx-7 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.hover\:mx-7:hover {
   margin-left: 3.5rem;
   margin-right: 3.5rem;
 }
@@ -458,7 +913,17 @@
   padding-right: 3.5rem;
 }
 
+.hover\:px-7:hover {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
 .my-7 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.hover\:my-7:hover {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
 }
@@ -468,7 +933,16 @@
   padding-bottom: 3.5rem;
 }
 
+.hover\:py-7:hover {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .mt-7 {
+  margin-top: 3.5rem;
+}
+
+.hover\:mt-7:hover {
   margin-top: 3.5rem;
 }
 
@@ -476,7 +950,15 @@
   padding-top: 3.5rem;
 }
 
+.hover\:pt-7:hover {
+  padding-top: 3.5rem;
+}
+
 .mb-7 {
+  margin-bottom: 3.5rem;
+}
+
+.hover\:mb-7:hover {
   margin-bottom: 3.5rem;
 }
 
@@ -484,7 +966,15 @@
   padding-bottom: 3.5rem;
 }
 
+.hover\:pb-7:hover {
+  padding-bottom: 3.5rem;
+}
+
 .ml-7 {
+  margin-left: 3.5rem;
+}
+
+.hover\:ml-7:hover {
   margin-left: 3.5rem;
 }
 
@@ -492,7 +982,15 @@
   padding-left: 3.5rem;
 }
 
+.hover\:pl-7:hover {
+  padding-left: 3.5rem;
+}
+
 .mr-7 {
+  margin-right: 3.5rem;
+}
+
+.hover\:mr-7:hover {
   margin-right: 3.5rem;
 }
 
@@ -500,7 +998,15 @@
   padding-right: 3.5rem;
 }
 
+.hover\:pr-7:hover {
+  padding-right: 3.5rem;
+}
+
 .gx-7 {
+  row-gap: 3.5rem;
+}
+
+.hover\:gx-7:hover {
   row-gap: 3.5rem;
 }
 
@@ -509,7 +1015,16 @@
        column-gap: 3.5rem;
 }
 
+.hover\:gy-7:hover {
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+}
+
 .m-8 {
+  margin: 4rem;
+}
+
+.hover\:m-8:hover {
   margin: 4rem;
 }
 
@@ -517,11 +1032,24 @@
   padding: 4rem;
 }
 
+.hover\:p-8:hover {
+  padding: 4rem;
+}
+
 .gap-8 {
   gap: 4rem;
 }
 
+.hover\:gap-8:hover {
+  gap: 4rem;
+}
+
 .mx-8 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.hover\:mx-8:hover {
   margin-left: 4rem;
   margin-right: 4rem;
 }
@@ -531,7 +1059,17 @@
   padding-right: 4rem;
 }
 
+.hover\:px-8:hover {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .my-8 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.hover\:my-8:hover {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
@@ -541,7 +1079,16 @@
   padding-bottom: 4rem;
 }
 
+.hover\:py-8:hover {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .mt-8 {
+  margin-top: 4rem;
+}
+
+.hover\:mt-8:hover {
   margin-top: 4rem;
 }
 
@@ -549,7 +1096,15 @@
   padding-top: 4rem;
 }
 
+.hover\:pt-8:hover {
+  padding-top: 4rem;
+}
+
 .mb-8 {
+  margin-bottom: 4rem;
+}
+
+.hover\:mb-8:hover {
   margin-bottom: 4rem;
 }
 
@@ -557,7 +1112,15 @@
   padding-bottom: 4rem;
 }
 
+.hover\:pb-8:hover {
+  padding-bottom: 4rem;
+}
+
 .ml-8 {
+  margin-left: 4rem;
+}
+
+.hover\:ml-8:hover {
   margin-left: 4rem;
 }
 
@@ -565,7 +1128,15 @@
   padding-left: 4rem;
 }
 
+.hover\:pl-8:hover {
+  padding-left: 4rem;
+}
+
 .mr-8 {
+  margin-right: 4rem;
+}
+
+.hover\:mr-8:hover {
   margin-right: 4rem;
 }
 
@@ -573,7 +1144,15 @@
   padding-right: 4rem;
 }
 
+.hover\:pr-8:hover {
+  padding-right: 4rem;
+}
+
 .gx-8 {
+  row-gap: 4rem;
+}
+
+.hover\:gx-8:hover {
   row-gap: 4rem;
 }
 
@@ -582,7 +1161,16 @@
        column-gap: 4rem;
 }
 
+.hover\:gy-8:hover {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
 .m-9 {
+  margin: 4.5rem;
+}
+
+.hover\:m-9:hover {
   margin: 4.5rem;
 }
 
@@ -590,11 +1178,24 @@
   padding: 4.5rem;
 }
 
+.hover\:p-9:hover {
+  padding: 4.5rem;
+}
+
 .gap-9 {
   gap: 4.5rem;
 }
 
+.hover\:gap-9:hover {
+  gap: 4.5rem;
+}
+
 .mx-9 {
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
+
+.hover\:mx-9:hover {
   margin-left: 4.5rem;
   margin-right: 4.5rem;
 }
@@ -604,7 +1205,17 @@
   padding-right: 4.5rem;
 }
 
+.hover\:px-9:hover {
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
+
 .my-9 {
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.hover\:my-9:hover {
   margin-top: 4.5rem;
   margin-bottom: 4.5rem;
 }
@@ -614,7 +1225,16 @@
   padding-bottom: 4.5rem;
 }
 
+.hover\:py-9:hover {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
 .mt-9 {
+  margin-top: 4.5rem;
+}
+
+.hover\:mt-9:hover {
   margin-top: 4.5rem;
 }
 
@@ -622,7 +1242,15 @@
   padding-top: 4.5rem;
 }
 
+.hover\:pt-9:hover {
+  padding-top: 4.5rem;
+}
+
 .mb-9 {
+  margin-bottom: 4.5rem;
+}
+
+.hover\:mb-9:hover {
   margin-bottom: 4.5rem;
 }
 
@@ -630,7 +1258,15 @@
   padding-bottom: 4.5rem;
 }
 
+.hover\:pb-9:hover {
+  padding-bottom: 4.5rem;
+}
+
 .ml-9 {
+  margin-left: 4.5rem;
+}
+
+.hover\:ml-9:hover {
   margin-left: 4.5rem;
 }
 
@@ -638,7 +1274,15 @@
   padding-left: 4.5rem;
 }
 
+.hover\:pl-9:hover {
+  padding-left: 4.5rem;
+}
+
 .mr-9 {
+  margin-right: 4.5rem;
+}
+
+.hover\:mr-9:hover {
   margin-right: 4.5rem;
 }
 
@@ -646,7 +1290,15 @@
   padding-right: 4.5rem;
 }
 
+.hover\:pr-9:hover {
+  padding-right: 4.5rem;
+}
+
 .gx-9 {
+  row-gap: 4.5rem;
+}
+
+.hover\:gx-9:hover {
   row-gap: 4.5rem;
 }
 
@@ -655,7 +1307,16 @@
        column-gap: 4.5rem;
 }
 
+.hover\:gy-9:hover {
+  -moz-column-gap: 4.5rem;
+       column-gap: 4.5rem;
+}
+
 .m-10 {
+  margin: 5rem;
+}
+
+.hover\:m-10:hover {
   margin: 5rem;
 }
 
@@ -663,11 +1324,24 @@
   padding: 5rem;
 }
 
+.hover\:p-10:hover {
+  padding: 5rem;
+}
+
 .gap-10 {
   gap: 5rem;
 }
 
+.hover\:gap-10:hover {
+  gap: 5rem;
+}
+
 .mx-10 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.hover\:mx-10:hover {
   margin-left: 5rem;
   margin-right: 5rem;
 }
@@ -677,7 +1351,17 @@
   padding-right: 5rem;
 }
 
+.hover\:px-10:hover {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .my-10 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.hover\:my-10:hover {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -687,7 +1371,16 @@
   padding-bottom: 5rem;
 }
 
+.hover\:py-10:hover {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .mt-10 {
+  margin-top: 5rem;
+}
+
+.hover\:mt-10:hover {
   margin-top: 5rem;
 }
 
@@ -695,7 +1388,15 @@
   padding-top: 5rem;
 }
 
+.hover\:pt-10:hover {
+  padding-top: 5rem;
+}
+
 .mb-10 {
+  margin-bottom: 5rem;
+}
+
+.hover\:mb-10:hover {
   margin-bottom: 5rem;
 }
 
@@ -703,7 +1404,15 @@
   padding-bottom: 5rem;
 }
 
+.hover\:pb-10:hover {
+  padding-bottom: 5rem;
+}
+
 .ml-10 {
+  margin-left: 5rem;
+}
+
+.hover\:ml-10:hover {
   margin-left: 5rem;
 }
 
@@ -711,7 +1420,15 @@
   padding-left: 5rem;
 }
 
+.hover\:pl-10:hover {
+  padding-left: 5rem;
+}
+
 .mr-10 {
+  margin-right: 5rem;
+}
+
+.hover\:mr-10:hover {
   margin-right: 5rem;
 }
 
@@ -719,11 +1436,24 @@
   padding-right: 5rem;
 }
 
+.hover\:pr-10:hover {
+  padding-right: 5rem;
+}
+
 .gx-10 {
   row-gap: 5rem;
 }
 
+.hover\:gx-10:hover {
+  row-gap: 5rem;
+}
+
 .gy-10 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.hover\:gy-10:hover {
   -moz-column-gap: 5rem;
        column-gap: 5rem;
 }/*# sourceMappingURL=spacing.css.map */
