@@ -5,6 +5,7 @@
 /* Utilities */
 @import url("../code/scss/compiled/display.css");
 @import url("../code/scss/compiled/spacing.css");
+@import url("../code/scss/compiled/position.css");
 
 /* Others */
 @import url("../code/scss/compiled/reset.css");
