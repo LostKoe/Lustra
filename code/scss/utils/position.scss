@@ -1,0 +1,27 @@
+$_position-types: static, relative, absolute, fixed, sticky;
+$_position-directions: top, left, right, bottom;
+
+@each $position in $_position-types {
+    .pos-#{$position} {
+        position: $position;
+    }
+
+    .hover\:pos-#{$position}:hover {
+        position: $position;
+    }
+}
+
+@for $i from 0 through 10 {
+    $name-value: $i * 10;
+    $property-value: $name-value * 1%;
+
+    @each $direction in $_position-directions {
+        .#{$direction}-#{$name-value} {
+            #{$direction}: $property-value;
+        }
+
+        .hover\:#{$direction}-#{$name-value}:hover {
+            #{$direction}: $property-value;
+        }
+    }
+}
