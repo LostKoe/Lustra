@@ -13,15 +13,30 @@ $_alerts-color: (
 );
 
 .alert {
-    background: transparent;
+    --background-color: #{map-get(variables.$alerts, background-color)};
+    --text-color: #{map-get(variables.$alerts, text-color)};
+    --box-shadow: #{map-get(variables.$alerts, box-shadow)};
+    --opacity: #{map-get(variables.$alerts, opacity)};
+    --padding-x: #{map-get(variables.$alerts, padding-x)};
+    --padding-y: #{map-get(variables.$alerts, padding-y)};
+    --margin-x: #{map-get(variables.$alerts, margin-x)};
+    --margin-y: #{map-get(variables.$alerts, margin-y)};
+    --border-type: #{map-get(variables.$alerts, border-type)};
+    --border-radius: #{map-get(variables.$alerts, border-radius)};
+    --gap-with-icon: #{map-get(variables.$alerts, gap-with-icon)};
+    --dimiss-btn-align: #{map-get(variables.$alerts, dimiss-btn-align)};
+    --dimiss-btn-cursor: #{map-get(variables.$alerts, dimiss-btn-cursor)};
+
+    background-color: var(--background-color);
+    color: var(--text-color);
     position: relative;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    opacity: 0.9;
-    @include mixins.padding-x(1.5rem);
-    @include mixins.padding-y(1rem);
-    @include mixins.margin-x(1rem);
-    @include mixins.margin-y(0.5rem);
-    @include mixins.border(none, 0.5rem);
+    box-shadow: var(--box-shadow);
+    opacity: var(--opacity);
+    @include mixins.padding-x(var(--padding-x));
+    @include mixins.padding-y(var(--padding-y));
+    @include mixins.margin-x(var(--margin-x));
+    @include mixins.margin-y(var(--margin-y));
+    @include mixins.border(var(--border-type), var(--border-radius));
 
     a {
         font-weight: bold;
@@ -31,7 +46,7 @@ $_alerts-color: (
     &-with-icon {
         display: flex;
         align-items: center;
-        column-gap: 1.5rem;
+        column-gap: var(--gap-with-icon);
 
         .alert-icon {
             height: 100%;
@@ -48,13 +63,13 @@ $_alerts-color: (
 
     .alert-dimiss-btn {
         justify-self: flex-end;
-        align-self: flex-start;
+        align-self: var(--dimiss-btn-align);
         background: transparent;
         border: none;
         min-width: 3.5rem;
         min-height: 2rem;
         font-size: 3rem;
-        cursor: pointer;
+        cursor: var(--dimiss-btn-cursor);
     }
 }
 
@@ -91,13 +106,13 @@ $_alerts-color: (
 @media (max-width: 375px) {
     .alert-with-icon {
         flex-direction: column;
-        row-gap: 1rem;
+        row-gap: var(--gap-with-icon);
         align-items: center;
         text-align: center;
     }
 
     .alert-dimiss-btn {
-        display:inline-block;
+        display: inline-block;
         width: max-content;
         margin: 0 auto;
     }

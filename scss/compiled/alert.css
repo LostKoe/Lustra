@@ -1,18 +1,32 @@
 .alert {
-  background: transparent;
+  --background-color: transparent;
+  --text-color: #343a40;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --opacity: 0.9;
+  --padding-x: 1.5rem;
+  --padding-y: 1rem;
+  --margin-x: 1rem;
+  --margin-y: 0.5rem;
+  --border-type: none;
+  --border-radius: 8px;
+  --gap-with-icon: 1.5rem;
+  --dimiss-btn-align: flex-start;
+  --dimiss-btn-cursor: pointer;
+  background-color: var(--background-color);
+  color: var(--text-color);
   position: relative;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  opacity: 0.9;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  border: none;
-  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  opacity: var(--opacity);
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+  margin-left: var(--margin-x);
+  margin-right: var(--margin-x);
+  margin-top: var(--margin-y);
+  margin-bottom: var(--margin-y);
+  border: var(--border-type);
+  border-radius: var(--border-radius);
 }
 .alert a {
   font-weight: bold;
@@ -21,8 +35,8 @@
 .alert-with-icon, .alert-dismissible {
   display: flex;
   align-items: center;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  -moz-column-gap: var(--gap-with-icon);
+       column-gap: var(--gap-with-icon);
 }
 .alert-with-icon .alert-icon, .alert-dismissible .alert-icon {
   height: 100%;
@@ -32,13 +46,13 @@
 }
 .alert .alert-dimiss-btn {
   justify-self: flex-end;
-  align-self: flex-start;
+  align-self: var(--dimiss-btn-align);
   background: transparent;
   border: none;
   min-width: 3.5rem;
   min-height: 2rem;
   font-size: 3rem;
-  cursor: pointer;
+  cursor: var(--dimiss-btn-cursor);
 }
 
 .alert-primary {
@@ -132,7 +146,7 @@
 @media (max-width: 375px) {
   .alert-with-icon, .alert-dismissible {
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: var(--gap-with-icon);
     align-items: center;
     text-align: center;
   }
