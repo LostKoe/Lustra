@@ -36,12 +36,27 @@ $_btn-outline: (
 
 // Main style
 .btn {
-    @include mixins.border(none, 0.5rem);
-    @include mixins.padding-x(2rem);
-    @include mixins.padding-y(0.5rem);
-    @include mixins.margin-y(0.5rem);
-    background: transparent;
-    cursor: pointer;
+    --background-color: #{map-get(variables.$btns, background-color)};
+    --text-color: #{map-get(variables.$btns, text-color)};
+    --cursor: #{map-get(variables.$btns, cursor)};
+    --border-type: #{map-get(variables.$btns, border-type)};
+    --border-radius: #{map-get(variables.$btns, border-radius)};
+    --padding-x: #{map-get(variables.$btns, padding-x)};
+    --padding-y: #{map-get(variables.$btns, padding-y)};
+    --margin-x: #{map-get(variables.$btns, margin-x)};
+    --margin-y: #{map-get(variables.$btns, margin-y)};
+    --link-color: #{map-get(variables.$btns, link-color)};
+    --group-radius: #{map-get(variables.$btns, group-radius)};
+    --icon-align: #{map-get(variables.$btns, icon-align)};
+    --box-shadow: #{map-get(variables.$btns, box-shadow)};
+
+    @include mixins.border(var(--border-type), var(--border-radius));
+    @include mixins.padding-x(var(--padding-x));
+    @include mixins.padding-y(var(--padding-y));
+    @include mixins.margin-x(var(--margin-x));
+    @include mixins.margin-y(var(--margin-y));
+    background: var(--background-color);
+    cursor: var(--cursor);
     font-size: 1rem;
     text-align: center;
     transition: filter 0.2s, background 0.2s, color 0.2s;
@@ -49,7 +64,7 @@ $_btn-outline: (
     // Link buttons
     &-link {
         background: transparent;
-        color: map-get(variables.$main-colors, primary);
+        color: var(--link-color);
         text-decoration: underline;
     }
 
@@ -65,14 +80,14 @@ $_btn-outline: (
         .btn {
             box-shadow: none;
             margin: 0;
-            @include mixins.border(none, 0);
+            @include mixins.border(var(--border-type), var(--border-radius));
 
             &:first-child {
-                border-radius: .5rem 0 0 .5rem;
+                border-radius: var(--group-radius) 0 0 var(--group-radius);
             }
 
             &:last-child {
-                border-radius: 0 .5rem .5rem 0;
+                border-radius: 0 var(--group-radius) var(--group-radius) 0;
             }
         }
 
@@ -85,14 +100,14 @@ $_btn-outline: (
             .btn {
                 box-shadow: none;
                 margin: 0;
-                @include mixins.border(none, 0);
+                @include mixins.border(var(--border-type), var(--border-radius));
 
                 &:first-child {
-                    border-radius: .5rem .5rem 0 0;
+                    border-radius: var(--group-radius) var(--group-radius) 0 0;
                 }
 
                 &:last-child {
-                    border-radius: 0 0 .5rem .5rem;
+                    border-radius: 0 0 var(--group-radius) var(--group-radius);
                 }
             }
         }
@@ -101,7 +116,7 @@ $_btn-outline: (
     // Button with icon (there's a chance of having some errors, so be careful)
     &-with-icon {
         display: flex;
-        align-items: center;
+        align-items: var(--icon-align);
         position: relative;
 
         & .btn-icon {
@@ -126,7 +141,7 @@ a.btn {
     .btn-#{$name} {
         background: map-get($props, bg);
         color: map-get($props, text);
-        box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--box-shadow);
 
         // Mouse actions that make the button lighter or darker
         &:hover {

@@ -240,3 +240,19 @@ $alerts: (
     dimiss-btn-align: flex-start,
     dimiss-btn-cursor: pointer,
 );
+
+$btns: (
+    background-color: transparent,
+    text-color: map-get($main-colors, dark),
+    cursor: pointer,
+    border-type: none,
+    border-radius: 8px,
+    padding-x: 2rem,
+    padding-y: 0.5rem,
+    margin-x: 0,
+    margin-y: 0.5rem,
+    link-color: map-get($main-colors, primary),
+    group-radius: 0.5rem,
+    icon-align: center,
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2),
+);

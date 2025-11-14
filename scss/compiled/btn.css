@@ -1,21 +1,36 @@
 .btn {
-  border: none;
-  border-radius: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  background: transparent;
-  cursor: pointer;
+  --background-color: transparent;
+  --text-color: #343a40;
+  --cursor: pointer;
+  --border-type: none;
+  --border-radius: 8px;
+  --padding-x: 2rem;
+  --padding-y: 0.5rem;
+  --margin-x: 0;
+  --margin-y: 0.5rem;
+  --link-color: #007bff;
+  --group-radius: 0.5rem;
+  --icon-align: center;
+  --box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  border: var(--border-type);
+  border-radius: var(--border-radius);
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+  margin-left: var(--margin-x);
+  margin-right: var(--margin-x);
+  margin-top: var(--margin-y);
+  margin-bottom: var(--margin-y);
+  background: var(--background-color);
+  cursor: var(--cursor);
   font-size: 1rem;
   text-align: center;
   transition: filter 0.2s, background 0.2s, color 0.2s;
 }
 .btn-link {
   background: transparent;
-  color: #007bff;
+  color: var(--link-color);
   text-decoration: underline;
 }
 .btn-block {
@@ -27,14 +42,14 @@
 .btn-group .btn {
   box-shadow: none;
   margin: 0;
-  border: none;
-  border-radius: 0;
+  border: var(--border-type);
+  border-radius: var(--border-radius);
 }
 .btn-group .btn:first-child {
-  border-radius: 0.5rem 0 0 0.5rem;
+  border-radius: var(--group-radius) 0 0 var(--group-radius);
 }
 .btn-group .btn:last-child {
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 var(--group-radius) var(--group-radius) 0;
 }
 .btn-group-vertical {
   display: flex;
@@ -45,18 +60,18 @@
 .btn-group-vertical .btn {
   box-shadow: none;
   margin: 0;
-  border: none;
-  border-radius: 0;
+  border: var(--border-type);
+  border-radius: var(--border-radius);
 }
 .btn-group-vertical .btn:first-child {
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: var(--group-radius) var(--group-radius) 0 0;
 }
 .btn-group-vertical .btn:last-child {
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 0 0 var(--group-radius) var(--group-radius);
 }
 .btn-with-icon {
   display: flex;
-  align-items: center;
+  align-items: var(--icon-align);
   position: relative;
 }
 .btn-with-icon .btn-icon {
@@ -75,7 +90,7 @@ a.btn {
 .btn-primary {
   background: #007bff;
   color: #f8f9fa;
-  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 .btn-primary:hover {
   filter: brightness(95%);
@@ -91,7 +106,7 @@ a.btn {
 .btn-secondary {
   background: #6c757d;
   color: #f8f9fa;
-  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 .btn-secondary:hover {
   filter: brightness(95%);
@@ -107,7 +122,7 @@ a.btn {
 .btn-warning {
   background: #ffc107;
   color: #343a40;
-  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 .btn-warning:hover {
   filter: brightness(105%);
@@ -123,7 +138,7 @@ a.btn {
 .btn-danger {
   background: #dc3545;
   color: #f8f9fa;
-  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 .btn-danger:hover {
   filter: brightness(95%);
@@ -139,7 +154,7 @@ a.btn {
 .btn-success {
   background: #28a745;
   color: #f8f9fa;
-  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 .btn-success:hover {
   filter: brightness(95%);
@@ -155,7 +170,7 @@ a.btn {
 .btn-info {
   background: #00ddff;
   color: #343a40;
-  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 .btn-info:hover {
   filter: brightness(105%);
@@ -171,7 +186,7 @@ a.btn {
 .btn-dark {
   background: #343a40;
   color: #f8f9fa;
-  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 .btn-dark:hover {
   filter: brightness(105%);
@@ -187,7 +202,7 @@ a.btn {
 .btn-light {
   background: #f8f9fa;
   color: #343a40;
-  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 .btn-light:hover {
   filter: brightness(95%);
