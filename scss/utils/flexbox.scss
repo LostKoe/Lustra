@@ -1,0 +1,142 @@
+$_justify-content-values: (
+    start: flex-start,
+    center: center,
+    end: flex-end,
+    around: space-around,
+    between: space-between,
+    evenly: space-evenly,
+);
+
+$_justify-self-values: (
+    auto: auto,
+    start: flex-start,
+    center: center,
+    end: flex-end,
+);
+
+$_align-values: (
+    start: flex-start,
+    center: center,
+    end: flex-end,
+    baseline: baseline,
+    stretch: stretch,
+);
+
+$_align-content-values: (
+    start: flex-start,
+    center: center,
+    end: flex-end,
+    around: space-around,
+    between: space-between,
+    evenly: space-evenly,
+    stretch: stretch
+);
+
+$_flex-directions: (
+    row: row,
+    col: column,
+    row-r: row-reverse,
+    col-r: column-reverse
+);
+
+$_flex-wraps: (
+    wrap: wrap,
+    nowrap: nowrap,
+    wrap-r: wrap-reverse
+);
+
+@each $justify, $value in $_justify-content-values {
+    .j-content-#{$justify} {
+        justify-content: $value;
+    }
+
+    .hover\:j-content-#{$justify}:hover {
+        justify-content: $value;
+    }
+}
+
+@each $justify, $value in $_justify-self-values {
+    .j-self-#{$justify} {
+        justify-self: $value;
+    }
+
+    .hover\:j-self-#{$justify}:hover {
+        justify-self: $value;
+    }
+}
+
+@each $align, $value in $_align-values {
+    .a-items-#{$align} {
+        align-items: $value;
+    }
+
+    .hover\:a-items-#{$align}:hover {
+        align-items: $value;
+    }
+
+    .a-self-#{$align} {
+        align-self: $value;
+    }
+
+    .hover\:a-self-#{$align}:hover {
+        align-self: $value;
+    }
+}
+
+@each $direction, $value in $_flex-directions {
+    .flex-#{$direction} {
+        flex-direction: $value;
+    }
+
+    .hover\:flex-#{$direction}:hover {
+        flex-direction: $value;
+    }
+}
+
+@for $i from 0 through 5 {
+    .flex-grow-#{$i} {
+        flex-grow: $i;
+    }
+
+    .hover\:flex-grow-#{$i}:hover {
+        flex-grow: $i;
+    }
+
+    .flex-shrink-#{$i} {
+        flex-shrink: $i;
+    }
+
+    .hover\:flex-shrink-#{$i}:hover {
+        flex-shrink: $i;
+    }
+}
+
+@each $wrap, $value in $_flex-wraps {
+    .flex-#{$wrap} {
+        flex-wrap: $value;
+    }
+
+    .hover\:flex-#{$wrap}:hover {
+        flex-wrap: $value;
+    }
+}
+
+@for $i from 1 through 10 {
+    .order-#{$i} {
+        order: $i;
+    }
+
+    .hover\:order-#{$i}:hover {
+        order: $i
+    }
+}
+
+@each $align, $value in $_align-content-values {
+    .a-content-#{$align} {
+        align-content: $value;
+    }
+
+    .hover\:a-content-#{$align}:hover {
+        align-content: $value;
+    }
+}
