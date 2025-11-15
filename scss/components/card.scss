@@ -1,0 +1,124 @@
+@use "../shared/variables";
+@use "../shared/mixins";
+
+.card {
+    --background-color: #{map-get(variables.$cards, background-color)};
+    --text-color: #{map-get(variables.$cards, text-color)};
+    --border-type: #{map-get(variables.$cards, border-type)};
+    --border-radius: #{map-get(variables.$cards, border-radius)};
+    --font-weight: #{map-get(variables.$cards, font-weight)};
+    --header-background: #{map-get(variables.$cards, header-background)};
+    --header-padding: #{map-get(variables.$cards, header-padding)};
+    --title-size: #{map-get(variables.$cards, title-size)};
+    --title-margin-bottom: #{map-get(variables.$cards, title-margin-bottom)};
+    --list-margin-y: #{map-get(variables.$cards, list-margin-y)};
+    --list-margin-x: #{map-get(variables.$cards, list-margin-x)};
+    --list-border-type: #{map-get(variables.$cards, list-border-type)};
+    --list-border-radius: #{map-get(variables.$cards, list-border-radius)};
+    --item-border-type: #{map-get(variables.$cards, item-border-type)};
+    --item-padding: #{map-get(variables.$cards, item-padding)};
+    --item-featured-background: #{map-get(variables.$cards, item-featured-background)};
+    --zebra-item-background: #{map-get(variables.$cards, zebra-item-background)};
+    --zebra-featured-background: #{map-get(variables.$cards, prop)};
+    --footer-background: #{map-get(variables.$cards, footer-background)};
+    --footer-margin: #{map-get(variables.$cards, footer-margin)};
+    --footer-padding: #{map-get(variables.$cards, footer-padding)};
+    --footer-border-type: #{map-get(variables.$cards, footer-border-type)};
+    --group-padding: #{map-get(variables.$cards, group-padding)};
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 1rem;
+    @include mixins.border(var(--border-type), var(--border-radius));
+    overflow: hidden;
+    font-weight: var(--font-weight);
+
+    &-header {
+        background: var(--header-background);
+        margin: -1rem -1rem 1rem -1rem;
+        padding: var(--header-padding);
+        font-weight: bold;
+        border-bottom: 1px solid map-get(variables.$neutral-group, neutral-300);
+
+        .card-img {
+            display: none;
+        }
+    }
+
+    &-title {
+        font-size: var(--title-size);
+        font-weight: bold;
+        margin-bottom: var(--title-margin-bottom);
+
+        &:has(+ .card-subtitle) {
+            margin-bottom: 0;
+        }
+    }
+
+    &-subtitle {
+        color: var(--subtitle-color);
+        font-size: var(--subtitle-size);
+        font-weight: bold;
+        margin-bottom: var(--subtitle-margin-bottom);
+    }
+
+    &-list {
+        @include mixins.margin-x(var(--list-margin-x));
+        @include mixins.margin-y(var(--list-margin-y));
+        @include mixins.border(var(--list-border-type), var(--list-border-radius));
+        list-style-type: none;
+        overflow: hidden;
+
+        .card-item {
+            border-bottom: var(--item-border-type);
+            padding: var(--item-padding);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &-featured {
+                background: var(--item-featured-background);
+            }
+        }
+
+        &-zebra {
+            .card-item:nth-child(even) {
+                background: var(--zebra-item-background);
+            }
+
+            .card-item-featured {
+                background: var(--zebra-featured-background);
+            }
+        }
+    }
+
+    &-footer {
+        background: var(--footer-background);
+        margin: var(--footer-margin) -1rem -1rem -1rem;
+        padding: var(--footer-padding);
+        border-top: var(--footer-border-type);
+    }
+
+    &-group {
+        display: flex;
+        justify-content: center;
+        padding: var(--group-padding);
+        overflow: hidden;
+
+        .card {
+            flex-grow: 1;
+            margin: 0;
+            border-radius: 0;
+
+            &:first-child {
+                border-radius: 8px 0 0 8px;
+            }
+
+            &:last-child {
+                border-radius: 0 8px 8px 0;
+            }
+        }
+    }
+}
