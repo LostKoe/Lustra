@@ -1,0 +1,101 @@
+@use "../shared/variables";
+@use "../shared/mixins";
+
+.navbar {
+    --background-color: #{map-get(variables.$navbars, background-color)};
+    --text-color: #{map-get(variables.$navbars, text-color)};
+    --height: #{map-get(variables.$navbars, height)};
+    --box-shadow: #{map-get(variables.$navbars, box-shadow)};
+    --padding-x: #{map-get(variables.$navbars, padding-x)};
+    --brand-gap: #{map-get(variables.$navbars, brand-gap)};
+    --brand-font-size: #{map-get(variables.$navbars, brand-font-size)};
+    --brand-font-weight: #{map-get(variables.$navbars, brand-font-weight)};
+    --brand-color: #{map-get(variables.$navbars, brand-color)};
+    --nav-gap: #{map-get(variables.$navbars, nav-gap)};
+    --nav-font-size: #{map-get(variables.$navbars, nav-font-size)};
+    --nav-btn-display: #{map-get(variables.$navbars, nav-btn-display)};
+    --expand-width: #{map-get(variables.$navbars, expand-width)};
+    --expand-items-direction: #{map-get(variables.$navbars, expand-items-direction)};
+    --expand-nav-position: #{map-get(variables.$navbars, expand-nav-position)};
+    --expand-nav-right: #{map-get(variables.$navbars, expand-nav-right)};
+    --expand-nav-top: #{map-get(variables.$navbars, expand-nav-top)};
+    --expand-nav-box-shadow: #{map-get(variables.$navbars, expand-nav-box-shadow)};
+    --expand-nav-padding: #{map-get(variables.$navbars, expand-nav-padding)};
+    --expand-nav-radius: #{map-get(variables.$navbars, expand-nav-radius)};
+    --expand-nav-z-index: #{map-get(variables.$navbars, expand-nav-z-index)};
+    --expand-btn-width: #{map-get(variables.$navbars, expand-btn-width)};
+    --expand-btn-height: #{map-get(variables.$navbars, expand-btn-height)};
+    --expand-btn-background-color: #{map-get(variables.$navbars, expand-btn-background-color)};
+    --expand-btn-cursor: #{map-get(variables.$navbars, expand-btn-cursor)};
+    --expand-span-background: #{map-get(variables.$navbars, expand-span-background)};
+    --expand-span-height: #{map-get(variables.$navbars, expand-span-height)};
+    --expand-span-radius: #{map-get(variables.$navbars, name)};
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background-color);
+    color: var(--text-color);
+    position: relative;
+    width: 100%;
+    min-height: var(--height);
+    box-shadow: var(--box-shadow);
+    @include mixins.padding-x(var(--padding-x));
+
+    &-brand {
+        @include mixins.flex-center();
+        gap: var(--brand-gap);
+        font-size: var(--brand-font-size);
+        font-weight: var(--brand-font-weight);
+        text-decoration: none;
+        color: var(--brand-color);
+
+        * {
+            color: var(--brand-color);
+        }
+    }
+
+    &-nav {
+        @include mixins.flex-center();
+        gap: var(--nav-gap);
+        list-style-type: none;
+        font-size: var(--nav-font-size);
+    }
+
+    &-btn-toggle {
+        display: var(--nav-btn-display);
+    }
+}
+
+@media (max-width: var(--expand-width)) {
+    .navbar {
+        &-nav {
+            display: none;
+            flex-direction: var(--expand-items-direction);
+            position: var(--expand-nav-position);
+            right: var(--expand-nav-right);
+            top: var(--expand-nav-top);
+            box-shadow: var(--expand-nav-box-shadow);
+            padding: var(--expand-nav-padding);
+            border-radius: var(--expand-nav-radius);
+            z-index: var(--expand-nav-z-index);
+        }
+
+        &-btn-toggle {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: var(--expand-btn-width);
+            height: var(--expand-btn-height);
+            background: var(--expand-btn-background-color);
+            border: none;
+            cursor: var(--expand-btn-cursor);
+
+            span {
+                background: var(--expand-span-background);
+                height: var(--expand-span-height);
+                border-radius: var(--expand-btn-radius);
+            }
+        }
+    }
+}

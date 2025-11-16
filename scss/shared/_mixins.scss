@@ -68,3 +68,9 @@
     background: rgba(52, 58, 64, $transparency);
     color: rgba(248, 249, 250, $transparency);
 }
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
