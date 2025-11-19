@@ -1,0 +1,25 @@
+@use "../shared/variables";
+
+@each $color, $value in variables.$main-colors {
+    .bg-#{$color} {
+        background: $value;
+    }
+}
+
+@mixin _generate-background-color($group) {
+    @each $shade, $value in $group {
+        .bg-#{$shade} {
+            background: $value;
+        }
+    }
+}
+
+@include _generate-background-color(variables.$red-group);
+@include _generate-background-color(variables.$orange-group);
+@include _generate-background-color(variables.$yellow-group);
+@include _generate-background-color(variables.$green-group);
+@include _generate-background-color(variables.$light-blue-group);
+@include _generate-background-color(variables.$dark-blue-group);
+@include _generate-background-color(variables.$purple-group);
+@include _generate-background-color(variables.$pink-group);
+@include _generate-background-color(variables.$neutral-group);
