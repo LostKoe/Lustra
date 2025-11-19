@@ -14,7 +14,6 @@
     --nav-gap: #{map-get(variables.$navbars, nav-gap)};
     --nav-font-size: #{map-get(variables.$navbars, nav-font-size)};
     --nav-btn-display: #{map-get(variables.$navbars, nav-btn-display)};
-    --expand-width: #{map-get(variables.$navbars, expand-width)};
     --expand-items-direction: #{map-get(variables.$navbars, expand-items-direction)};
     --expand-nav-position: #{map-get(variables.$navbars, expand-nav-position)};
     --expand-nav-right: #{map-get(variables.$navbars, expand-nav-right)};
@@ -29,7 +28,7 @@
     --expand-btn-cursor: #{map-get(variables.$navbars, expand-btn-cursor)};
     --expand-span-background: #{map-get(variables.$navbars, expand-span-background)};
     --expand-span-height: #{map-get(variables.$navbars, expand-span-height)};
-    --expand-span-radius: #{map-get(variables.$navbars, name)};
+    --expand-span-radius: #{map-get(variables.$navbars, expand-span-radius)};
 
     display: flex;
     justify-content: space-between;
@@ -67,7 +66,7 @@
     }
 }
 
-@media (max-width: var(--expand-width)) {
+@media (max-width: 992px) {
     .navbar {
         &-nav {
             display: none;

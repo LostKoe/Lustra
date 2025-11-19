@@ -23,7 +23,5 @@ export function LustraNavbars() {
 
             isNavbarDisplayFlex = !isNavbarDisplayFlex
         })
-
-        console.log(navbarNav.style.display)
     })
 }
