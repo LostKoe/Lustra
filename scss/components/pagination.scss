@@ -1,56 +1,62 @@
 @use "../shared/variables";
 @use "../shared/mixins";
 
-$_pagination-sizes: (
-    sm: 0.5,
-    lg: 1.5,
-);
-
 .pagination {
+    --justify-content: #{map-get(variables.$paginations, justify-content)};
+    --align-items: #{map-get(variables.$paginations, align-items)};
+    --margin: #{map-get(variables.$paginations, margin)};
+    --item-background: #{map-get(variables.$paginations, item-background)};
+    --item-border: #{map-get(variables.$paginations, item-border)};
+    --item-padding: #{map-get(variables.$paginations, item-padding)};
+    --item-radius: #{map-get(variables.$paginations, item-radius)};
+    --item-active-background: #{map-get(variables.$paginations, item-active-background)};
+    --item-active-color: #{map-get(variables.$paginations, item-active-color)};
+    --item-active-border: #{map-get(variables.$paginations, item-active-border)};
+    --item-hover-intensity: #{map-get(variables.$paginations, item-hover-intensity)};
+    --item-hover-cursor: #{map-get(variables.$paginations, item-hover-cursor)};
+    --link-decoration: #{map-get(variables.$paginations, link-decoration)};
+    --link-color: #{map-get(variables.$paginations, link-color)};
+    --active-link-color: #{map-get(variables.$paginations, active-link-color)};
+
     display: flex;
-    align-items: center;
-    margin: 1rem;
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+    margin: var(--margin);
     list-style-type: none;
 
     &-item {
-        background: map-get(variables.$main-colors, light);
+        background: var(--item-background);
         border-radius: 0;
-        border: 1px solid map-get(variables.$neutral-group, neutral-150);
-        padding: 0.5rem 1rem;
+        border: var(--item-border);
+        padding: var(--item-padding);
         transition: filter 0.3s;
 
         &:first-child {
-            border-radius: 7px 0 0 7px;
+            border-radius: var(--item-radius) 0 0 var(--item-radius);
         }
 
         &:last-child {
-            border-radius: 0 7px 7px 0;
+            border-radius: 0 var(--item-radius) var(--item-radius) 0;
         }
 
         &-active {
-            background: map-get(variables.$main-colors, primary);
-            color: map-get(variables.$main-colors, light);
-            border-color: transparent;
+            background: var(--item-active-background);
+            color: var(--item-active-color);
+            border-color: var(--item-active-border);
         }
 
         &:hover {
-            filter: brightness(95%);
-            cursor: pointer;
+            filter: brightness(var(--item-hover-intensity));
+            cursor: var(--item-hover-cursor);
         }
 
         a {
-            text-decoration: none;
-            color: map-get(variables.$main-colors, primary);
+            text-decoration: var(--link-decoration);
+            color: var(--link-color);
         }
 
         &-active a {
-            color: map-get(variables.$main-colors, light);
+            color: var(--active-link-color);
         }
-    }
-}
-
-@each $name, $size in $_pagination-sizes {
-    .pagination-#{$name} {
-        transform: scale($size);
     }
 }

@@ -315,3 +315,22 @@ $navbars: (
     expand-span-height: 20%,
     expand-span-radius: 8px,
 );
+
+
+$paginations: (
+    justify-content: flex-start,
+    align-items: center,
+    margin: 1rem,
+    item-background: map-get($main-colors, light),
+    item-border: 1px solid map-get($neutral-group, neutral-150),
+    item-padding: 0.5rem 1rem,
+    item-radius: 7px,
+    item-active-background: map-get($main-colors, primary),
+    item-active-color: map-get($main-colors, light),
+    item-active-border: 1px solid transparent,
+    item-hover-intensity: 95%,
+    item-hover-cursor: pointer,
+    link-decoration: none,
+    link-color: map-get($main-colors, primary),
+    active-link-color: map-get($main-colors, light),
+);
