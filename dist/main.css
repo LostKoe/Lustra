@@ -9,6 +9,8 @@
 @import url("../scss/compiled/spacing.css");
 @import url("../scss/compiled/position.css");
 @import url("../scss/compiled/text.css");
+@import url("../scss/compiled/text-colors.css");
+@import url("../scss/compiled/background-color.css");
 
 /* Others */
 @import url("../scss/compiled/reset.css");

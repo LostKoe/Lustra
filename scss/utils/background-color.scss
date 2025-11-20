@@ -2,14 +2,14 @@
 
 @each $color, $value in variables.$main-colors {
     .bg-#{$color} {
-        background: $value;
+        background: $value !important;
     }
 }
 
 @mixin _generate-background-color($group) {
     @each $shade, $value in $group {
         .bg-#{$shade} {
-            background: $value;
+            background: $value !important;
         }
     }
 }
