@@ -1,0 +1,56 @@
+@use "../shared/variables";
+@use "../shared/mixins";
+
+$_pagination-sizes: (
+    sm: 0.5,
+    lg: 1.5,
+);
+
+.pagination {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    list-style-type: none;
+
+    &-item {
+        background: map-get(variables.$main-colors, light);
+        border-radius: 0;
+        border: 1px solid map-get(variables.$neutral-group, neutral-150);
+        padding: 0.5rem 1rem;
+        transition: filter 0.3s;
+
+        &:first-child {
+            border-radius: 7px 0 0 7px;
+        }
+
+        &:last-child {
+            border-radius: 0 7px 7px 0;
+        }
+
+        &-active {
+            background: map-get(variables.$main-colors, primary);
+            color: map-get(variables.$main-colors, light);
+            border-color: transparent;
+        }
+
+        &:hover {
+            filter: brightness(95%);
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: map-get(variables.$main-colors, primary);
+        }
+
+        &-active a {
+            color: map-get(variables.$main-colors, light);
+        }
+    }
+}
+
+@each $name, $size in $_pagination-sizes {
+    .pagination-#{$name} {
+        transform: scale($size);
+    }
+}

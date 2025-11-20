@@ -3,6 +3,7 @@
 @import url("../scss/compiled/alert.css");
 @import url("../scss/compiled/card.css");
 @import url("../scss/compiled/navbar.css");
+@import url("../scss/compiled/pagination.css");
 
 /* Utilities */
 @import url("../scss/compiled/display.css");
