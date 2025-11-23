@@ -14,7 +14,6 @@ export function LustraCards() {
             cardHeader.style.display = "flex"
             cardHeader.style.alignItems = "flex-end"
             cardImg.style.display = "none"
-
         }
     })
 }
