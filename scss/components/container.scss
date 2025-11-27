@@ -1,0 +1,26 @@
+@use "../shared/mixins";
+
+$_containers-sizes: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+    fluid: 100%
+);
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;;
+}
+
+@each $size, $value in $_containers-sizes {
+    .container-#{$size} {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        max-width: $value;
+    }
+}
